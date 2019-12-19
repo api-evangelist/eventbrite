@@ -1,0 +1,16 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v3",
+        "title": "Eventbrite Users API",
+        "description": "The API for managing Eventbrite users.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.eventbriteapi.com\/v3"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": []
+    }
+}
