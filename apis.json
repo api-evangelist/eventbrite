@@ -1,0 +1,355 @@
+{
+    "name": "Eventbrite",
+    "description": "Eventbrite brings people together through live experiences. Discover events that match your passions, or create your own with online ticketing tools.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+    "tags": [
+        "api lifeycle",
+        "api provider",
+        "general data",
+        "have api",
+        "have swagger",
+        "historical data api",
+        "marketplaces",
+        "pedestal",
+        "registrations",
+        "relative data",
+        "streams",
+        "tickets",
+        "webhook implementations"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Eventbrite Categories API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+            "humanURL": "http:\/\/eventbrite.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-categories-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/eventbrite-categories-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-categories-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Eventbrite Event API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+            "humanURL": "http:\/\/eventbrite.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-event-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/eventbrite-event-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-event-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Eventbrite Users API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+            "humanURL": "http:\/\/eventbrite.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-users-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/eventbrite-users-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-users-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Eventbrite Formats API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+            "humanURL": "http:\/\/eventbrite.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-formats-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/eventbrite-formats-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-formats-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Eventbrite Media API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+            "humanURL": "http:\/\/eventbrite.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-media-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/eventbrite-media-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-media-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Eventbrite Orders API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+            "humanURL": "http:\/\/eventbrite.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-orders-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/eventbrite-orders-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-orders-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Eventbrite Organizers API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+            "humanURL": "http:\/\/eventbrite.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-organizers-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/eventbrite-organizers-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-organizers-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Eventbrite System API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+            "humanURL": "http:\/\/eventbrite.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-system-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/eventbrite-system-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-system-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Eventbrite Venue API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+            "humanURL": "http:\/\/eventbrite.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-venue-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/eventbrite-venue-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-venue-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Eventbrite Webhooks API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+            "humanURL": "http:\/\/eventbrite.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-webhooks-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/eventbrite-webhooks-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-webhooks-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "Eventbrite API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/193-eventbrite.jpg",
+            "humanURL": "http:\/\/eventbrite.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/eventbrite-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-api-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Apigee Console",
+            "url": "https:\/\/api.apigee.com\/v1\/consoles\/eventbrite\/apidescription?format=internal&ver=1351170233000"
+        },
+        {
+            "type": "Authentication",
+            "url": "https:\/\/developer.eventbrite.com\/docs\/auth\/"
+        },
+        {
+            "type": "Base",
+            "url": "https:\/\/www.eventbriteapi.com\/"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/blog.eventbrite.com\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/blog.eventbrite.com\/feed\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/eventbrite"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/eventbrite"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/developer.eventbrite.com\/"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/eventbrite"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/193-2019-09-03-22-19-02.json"
+        },
+        {
+            "type": "Pricing",
+            "url": "http:\/\/help.eventbrite.com\/customer\/en_us\/portal\/articles\/428604"
+        },
+        {
+            "type": "Privacy",
+            "url": "http:\/\/www.eventbrite.com\/privacypolicy"
+        },
+        {
+            "type": "SDKs.io",
+            "url": "https:\/\/sdks.io\/SDK\/View\/eventbrite"
+        },
+        {
+            "type": "Registration",
+            "url": "https:\/\/www.eventbrite.com\/signup\/?referrer=%2F%3Fshow_onboarding%3D1&user_type=prebuyer&user_type_sig=AH_ElWGNJ_zHaAxwjzt5jiCRmvPvNBsy6w"
+        },
+        {
+            "type": "Terms Of Service",
+            "url": "http:\/\/www.eventbrite.com\/tos"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/EventbriteAPI"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/eventbrite"
+        },
+        {
+            "type": "Webhooks",
+            "url": "https:\/\/www.eventbrite.com\/developer\/v3\/api_overview\/webhooks\/"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/eventbriteapi.com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/developer.eventbrite.com\/"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/eventbrite.com"
+        }
+    ]
+}
