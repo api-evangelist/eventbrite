@@ -1,5 +1,5 @@
 {
-    "id": "e56d469f895f8fcdc3d65689bcf07553",
+    "id": "11a4f0b61338449eda75b6ad4edc3a01",
     "name": "Eventbrite API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "ab404fb59cf659e361dbec0582d6dbae",
+            "id": "e50f4fb86fc97e87349861be552691c9",
             "name": "Post Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/",
             "description": "Makes a new event, and returns an event for the specified event.",
@@ -226,11 +226,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "5b7b09cce07d7dcd88c856491ff9ef25",
+            "id": "18b5fbd01aeaab7fea196b98a3f34421",
             "name": "Get Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}",
             "description": "Returns an event for the specified event. Many of Eventbrite?s API use cases resolve around pulling details of a specific event within an Eventbrite account.",
@@ -257,11 +257,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "3347098aea4b0c3b76e2d6a967dca891",
+            "id": "a76521bcda2dbdab8305d39f5df7a5bc",
             "name": "Post Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}",
             "description": "Updates an event. Returns an event for the specified event.",
@@ -295,11 +295,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "968076c79fccf5666ce2866e8811a2a6",
+            "id": "933809039e60c87f7751170f97902ab7",
             "name": "Get Categories",
             "url": "httpswww.eventbriteapi.com\/v3\/\/categories\/{id}\/",
             "description": "Gets a category by ID as category.",
@@ -318,11 +318,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "844ef555bbda2e1b3c8fafd96c34c2f5",
+            "id": "85854c99a62dbe5daa05f974002cb650",
             "name": "Get Subcategories",
             "url": "httpswww.eventbriteapi.com\/v3\/\/subcategories\/",
             "description": "Returns a list of subcategory as subcategories.",
@@ -341,11 +341,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "f45a6fc54a5bbc072f7eb802ee5c7785",
+            "id": "a96fcef93886baa90f9e645a106626d4",
             "name": "Get Subcategories",
             "url": "httpswww.eventbriteapi.com\/v3\/\/subcategories\/{id}\/",
             "description": "Gets a subcategory by ID as subcategory.",
@@ -364,11 +364,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "459055129991e328df862afec338a42e",
+            "id": "08ff80096fd1fe582eb613f33ee4c813",
             "name": "Get Checkout Settings Countries Currencies",
             "url": "httpswww.eventbriteapi.com\/v3\/\/checkout_settings\/countries_currencies\/",
             "description": "Get the countries and currencies which are supported by Eventbrite for ticket payment",
@@ -387,11 +387,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "1af3e0b2c37a497aa547aaf47772256d",
+            "id": "a0e440dbd78bd9735518d473cb784860",
             "name": "Get Checkout Settings Methods",
             "url": "httpswww.eventbriteapi.com\/v3\/\/checkout_settings\/methods\/",
             "description": "Get the available checkout methods to do payments given a country and a currency.",
@@ -425,11 +425,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "c69bdada5c777dfa34e9746a6b643a36",
+            "id": "1a258dc9d4e03b5662c5a968b7e7aa98",
             "name": "Get Checkout Settings",
             "url": "httpswww.eventbriteapi.com\/v3\/\/checkout_settings\/",
             "description": "Searches and returns a list of checkout_settings for the current user as the key checkout_settings.",
@@ -477,11 +477,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "1544a8042fe1dfe45949f7f37ea5e51b",
+            "id": "d5741494c800d938b33c663eab6661b8",
             "name": "Post Checkout Settings",
             "url": "httpswww.eventbriteapi.com\/v3\/\/checkout_settings\/",
             "description": "Creates a new checkout_settings object belonging to the current user. Two common settings are Eventbrite Payment Processing ( checkout_method = &#8220;eventbrite&#8221; ) and PayPal ( checkout_method = &#8220;paypal&#8221; ). In addition to the checkout_method you must provide the country and currency proceeds from the event should be paid to.",
@@ -500,11 +500,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "fb9ab22bd58888ffbd24f6b92d9b479b",
+            "id": "58fdca44e4061169a0274419fc85563e",
             "name": "Get Checkout Settings Checkout Settings",
             "url": "httpswww.eventbriteapi.com\/v3\/\/checkout_settings\/:checkout_settings_id\/",
             "description": "Get a specific checkout_settings object by ID",
@@ -523,11 +523,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "9f11ab8250f692f7f04f63170311de2b",
+            "id": "3a374241ccb2fee61f8146d4d18d94ac",
             "name": "Get Events Event Checkout Settings",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/:event_id\/checkout_settings\/",
             "description": "Gets and returns a list of checkout_settings associated with a given event by its event_id.",
@@ -546,11 +546,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "a61255f9adb30c040d853e596f1d0a3c",
+            "id": "6d7cd76ce47bdb13538010a4b2933d47",
             "name": "Post Events Event Checkout Settings",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/:event_id\/checkout_settings\/",
             "description": "Associate a single or set of checkout_settings with a given event by its event_id. This does not add more checkout settings to the event, but instead replaces all checkout settings for the event with the one(s) submitted. The JSON post body is a string list of the checkout_settings IDs you want to associate.",
@@ -577,11 +577,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "8596dc39a038b986c0841e4a6bc958cf",
+            "id": "4f750a5f8050346ecdc148f12e698efe",
             "name": "Get Events Event Payout Settings",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/:event_id\/payout_settings\/",
             "description": "Gets and returns the payout_settings (user instrument ID) associated with a given event by its event_id.",
@@ -600,11 +600,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "d7f5cd82e394826559c06eacb086e326",
+            "id": "ef5accfc284d2aeed0988db9b12038b1",
             "name": "Post Events Event Payout Settings",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/:event_id\/payout_settings\/",
             "description": "Associate a payout user instrument ID with a given event, or clear the association by passing a null value for the user instrument ID.",
@@ -631,11 +631,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "fcfb923878066cafb785e52f3f55dc1c",
+            "id": "261c4ef6fd6ed2436e6dfd6a61681f43",
             "name": "Get Discounts Discount",
             "url": "httpswww.eventbriteapi.com\/v3\/\/discounts\/:discount_id\/",
             "description": "Returns the cross_event_discount with the specified :discount_id.",
@@ -654,11 +654,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "fc119672b9403f4dd99da832ceb58514",
+            "id": "aa4e0ca8712bd84ca180192dff95084b",
             "name": "Post Discounts Discount",
             "url": "httpswww.eventbriteapi.com\/v3\/\/discounts\/:discount_id\/",
             "description": "Updates the discount with the specified :discount_id. Returns the updated cross_event_discount. The fields sent are the ones that are going to be updated, the fields that are not sent will be unchanged. The same conditions and notes for the discount creation apply.",
@@ -748,11 +748,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "c01dd200902a4b86c196caadb6c34389",
+            "id": "f54c88cbbcaab6efa5d27caf39c24af4",
             "name": "Delete Discounts Discount",
             "url": "httpswww.eventbriteapi.com\/v3\/\/discounts\/:discount_id\/",
             "description": "Deletes the cross_event_discount with the specified :discount_id.\nOnly unused discounts can be deleted.",
@@ -771,11 +771,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "b31e093eca86c11df9ee01b70c73e014",
+            "id": "e4d0000aac75a4cabdcea0e7f788b6be",
             "name": "Post Discounts",
             "url": "httpswww.eventbriteapi.com\/v3\/\/discounts\/",
             "description": "Creates a discount. Returns the created cross_event_discount.",
@@ -886,11 +886,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "54729949bb9e060901389a359d624eeb",
+            "id": "34d11deb7cb5b5d625cbf92c08ec4ad5",
             "name": "Get Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/",
             "description": "Returns an event for the specified event. Many of Eventbrite???s API use cases revolve around pulling details\nof a specific event within an Eventbrite account. Does not support fetching a repeating event series parent\n(see GET \/series\/:id\/).",
@@ -909,11 +909,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "db41e47aaa21482f33369569b1d874bb",
+            "id": "3a5e21ccf4e0ef7bda5f9fdec307b991",
             "name": "Post Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/",
             "description": "Updates an event. Returns an event for the specified event. Does not support updating a repeating event\nseries parent (see POST \/series\/:id\/).",
@@ -1122,11 +1122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "2982e1dfb9cf33fa7e2694c346eb7d67",
+            "id": "a8d6d3b3e3a410c9afb373196043bb86",
             "name": "Delete Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/",
             "description": "Deletes an event if the delete is permitted. In order for a delete to be permitted, there must be no pending or\ncompleted orders. Returns a boolean indicating success or failure of the delete.",
@@ -1145,11 +1145,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "97f0bd3adc21416ee572bb2a547011a4",
+            "id": "a7bef7e746d3b7f2023c205f34cd2e79",
             "name": "Post Events Publish",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/publish\/",
             "description": "Publishes an event if it has not already been deleted. In order for publish to be permitted, the event must have all\nnecessary information, including a name and description, an organizer, at least one ticket, and valid payment options.\nThis API endpoint will return argument errors for event fields that fail to validate the publish requirements. Returns\na boolean indicating success or failure of the publish.",
@@ -1168,11 +1168,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "732d6beb9d94baea5331306791fd7e6e",
+            "id": "d8d56d29cdb85aebfb137db90d8f997f",
             "name": "Post Events Unpublish",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/unpublish\/",
             "description": "Unpublishes an event. In order for a free event to be unpublished, it must not have any pending or completed orders,\neven if the event is in the past. In order for a paid event to be unpublished, it must not have any pending or completed\norders, unless the event has been completed and paid out. Returns a boolean indicating success or failure of the\nunpublish.",
@@ -1191,11 +1191,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "fcd5917e7b809c45c6886fe538b50133",
+            "id": "112b699c8630ed55e6aabac32d059233",
             "name": "Post Events Cancel",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/cancel\/",
             "description": "Cancels an event if it has not already been deleted. In order for cancel to be permitted, there must be no pending or\ncompleted orders. Returns a boolean indicating success or failure of the cancel.",
@@ -1214,11 +1214,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "b382682d2c770a4d82145d0714cf988c",
+            "id": "5f25b56cf436ec9af3bbf9b768e79b27",
             "name": "Post Events Copy",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/copy\/",
             "description": "Creates a duplicate version of the event being copied. Returns the event object for the newly created event.",
@@ -1266,11 +1266,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "06570942e6b389196646a3de56c22e5b",
+            "id": "edb25117bcfbdf556646cbd5a4f0a2d0",
             "name": "Get Events Display Settings",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/display_settings\/",
             "description": "Retrieves the display settings for an event.",
@@ -1289,11 +1289,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "3e686ca737be0f57f87b40fc518fd59a",
+            "id": "02bc9ea465cf2901b9e739779e72c22e",
             "name": "Post Events Display Settings",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/display_settings\/",
             "description": "Updates the display settings for an event.",
@@ -1383,11 +1383,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "79fc94ab7024264d9641a56e040decfc",
+            "id": "79b12fab367f07141c2789c5cf08480e",
             "name": "Get Events Ticket Classes",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/ticket_classes\/",
             "description": "Returns a paginated response with a key of\nticket_classes, containing a list of ticket_class.",
@@ -1414,11 +1414,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "db84c63e144e4b572a87bf2a39520e88",
+            "id": "7e3ff38837a73f5e3e81080689d58cc2",
             "name": "Post Events Ticket Classes",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/ticket_classes\/",
             "description": "Creates a new ticket class, returning the result as a ticket_class\nunder the key ticket_class.",
@@ -1578,11 +1578,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "25cd54132baea2d49fc33bcde6c9917e",
+            "id": "373816f8dbd6c5063a2be3f8c1ddc1fa",
             "name": "Get Events Ticket Classes Ticket Class",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/ticket_classes\/:ticket_class_id\/",
             "description": "Gets and returns a single ticket_class by ID, as the key\nticket_class.",
@@ -1601,11 +1601,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "091333153d5ecdb8826160cc0339c5cd",
+            "id": "f8b3a7fab5ec1e0eafab9712901b8c55",
             "name": "Post Events Ticket Classes Ticket Class",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/ticket_classes\/:ticket_class_id\/",
             "description": "Updates an existing ticket class, returning the updated result as a ticket_class under the key ticket_class.",
@@ -1765,11 +1765,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "9a4c8883b61240bbfb583e1049800da9",
+            "id": "2bd2a0bc3cb83cb1b97d651098d22241",
             "name": "Delete Events Ticket Classes Ticket Class",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/ticket_classes\/:ticket_class_id\/",
             "description": "Deletes the ticket class. Returns {&quot;deleted&quot;: true}.",
@@ -1796,11 +1796,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "3be31f9925e1b4cff884a02bf6971617",
+            "id": "86fcd988cb9dd94cc9264dd51bf89ea8",
             "name": "Get Events Canned Questions",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/canned_questions\/",
             "description": "This endpoint returns canned questions of a single event (examples: first name, last name, company, prefix, etc.). This endpoint will return question.",
@@ -1827,11 +1827,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "18c60cc6f5e27c4495feb240c1be2e71",
+            "id": "450511baa9a82edddafab24aae737efa",
             "name": "Post Events Canned Questions",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/canned_questions\/",
             "description": "Creates a new canned question; returns the result as a question.",
@@ -1921,11 +1921,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "013a95b010353e517a333acf41e550ce",
+            "id": "2b1698ddfeedebe76c8885f9e9a7e8db",
             "name": "Get Events Questions",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/questions\/",
             "description": "Eventbrite allows event organizers to add custom questions that attendees fill\nout upon registration. This endpoint can be helpful for determining what\ncustom information is collected and available per event.",
@@ -1952,11 +1952,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "06e9d2866c2148f1b5365d62b8eca9b4",
+            "id": "f81fa761471de66752deb1f935b104d8",
             "name": "Post Events Questions",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/questions\/",
             "description": "Creates a new question; returns the result as a question as the key question.",
@@ -2046,11 +2046,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "71adc1ab674c80002863f9904212dc7d",
+            "id": "c648ddf2d55bdd30fa1ade5c7723f6df",
             "name": "Get Events Questions",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/questions\/{id}\/",
             "description": "This endpoint will return question for a specific question id.",
@@ -2069,11 +2069,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "2406ed5a9bddb0a8eb92cd283ca02326",
+            "id": "96e54537ad1bb5df3f697288f0187eb1",
             "name": "Get Events Attendees Attendee",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/attendees\/:attendee_id\/",
             "description": "Returns a single attendee by ID, as the key attendee.",
@@ -2092,11 +2092,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "d2791119bd9749a56d085eff5bf0fa0b",
+            "id": "957c6c4934280a82c7d6454778a73de0",
             "name": "Get Events Orders",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/orders\/",
             "description": "Returns a paginated response with a key of orders, containing a list of order against this event.",
@@ -2158,11 +2158,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "ab65f5f901c28c351eed91d809a3751d",
+            "id": "b52da350936f49c65d7f13bd2c0d744c",
             "name": "Get Events Discounts",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/discounts\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/users\/#ebapi-get-users-user-id-discounts",
@@ -2181,11 +2181,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "b1164c09c6c442c6280af53371c6cb21",
+            "id": "b3e04906339bb7db8cfb226d9c9f99c3",
             "name": "Post Events Discounts",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/discounts\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-post-discounts",
@@ -2204,11 +2204,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "512852498c638333d88b2af6a285edc3",
+            "id": "087e382f54dfd22b31d78d98fe9236e5",
             "name": "Get Events Discounts Discount",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/discounts\/:discount_id\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-get-discounts-discount-id",
@@ -2227,11 +2227,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "483ce189793ebc772dc79be56590e2e9",
+            "id": "485d3bb9123e3df6ef13c032db1a9575",
             "name": "Post Events Discounts Discount",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/discounts\/:discount_id\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-post-discounts-discount-id",
@@ -2250,11 +2250,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "8f17b784ee99af53e9f45bf6febc2767",
+            "id": "4f6dc306ff95f9e4e52623555086b25e",
             "name": "Delete Events Discounts Discount",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/discounts\/:discount_id\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-delete-discounts-discount-id",
@@ -2273,11 +2273,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "9ec9e0e886f3f37e4b01be103113ecd5",
+            "id": "eb5cca2498c63b760cf3fe4b6058bc85",
             "name": "Get Events Public Discounts",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/public_discounts\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/users\/#ebapi-get-users-user-id-discounts",
@@ -2296,11 +2296,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "7c43aae2832cf126c8a9d0ef550da357",
+            "id": "1fd2d463dcca3f4e0c385c507e626d20",
             "name": "Post Events Public Discounts",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/public_discounts\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-post-discounts",
@@ -2319,11 +2319,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "e20105d615b21d7b28c455087eae52c4",
+            "id": "58f0d9e7191415f9a87d31b4dcf228f8",
             "name": "Get Events Public Discounts Discount",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/public_discounts\/:discount_id\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-get-discounts-discount-id",
@@ -2342,11 +2342,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "8207f084cf551e5c5727d7c1f6101114",
+            "id": "e698643ce1694de3f285432624015baa",
             "name": "Post Events Public Discounts Discount",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/public_discounts\/:discount_id\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-post-discounts-discount-id",
@@ -2365,11 +2365,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "f06be48874d1d04370a9b2d3aa2a9306",
+            "id": "ae28806621df162b5c6689c24cf68ab9",
             "name": "Delete Events Public Discounts Discount",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/public_discounts\/:discount_id\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-delete-discounts-discount-id",
@@ -2388,11 +2388,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "e2962724f0819bfdaeabdeae61fbcc37",
+            "id": "54095bdb48608b98cbfabdb92f08c86d",
             "name": "Get Events Access Codes",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/access_codes\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/users\/#ebapi-get-users-user-id-discounts",
@@ -2411,11 +2411,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "8f884656ab71cc1e1adc1e93a5daf02c",
+            "id": "83f7e4323256fd6f73ed6c5c39f8d526",
             "name": "Post Events Access Codes",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/access_codes\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-post-discounts",
@@ -2434,11 +2434,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "6b85a2fa5e8e50203f374fbecf0cf013",
+            "id": "44b7e3227dbe797ea0b9c3024666a4fe",
             "name": "Delete Events Access Codes",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/access_codes\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-delete-discounts-discount-id",
@@ -2457,11 +2457,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "8839d9f5fb15ec3e7a93c78c04d17178",
+            "id": "79f7ecea857be8f11554280855584d7c",
             "name": "Get Events Access Codes Access Code",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/access_codes\/:access_code_id\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-get-discounts-discount-id",
@@ -2480,11 +2480,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "5118a373ed8b622a6d7b949deb3aed85",
+            "id": "145c8c8afdf7fac541f7beb2f3d5490c",
             "name": "Post Events Access Codes Access Code",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/access_codes\/:access_code_id\/",
             "description": "Please use https:\/\/www.eventbrite.com\/developer\/v3\/endpoints\/cross_event_discounts\/#ebapi-get-discounts-discount-id",
@@ -2503,11 +2503,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "c62426e9a381afb8789cafcdb7f72931",
+            "id": "86eb0c8d4a045f2709bf038143867191",
             "name": "Get Events Transfers",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/transfers\/",
             "description": "Returns a list of transfers for the event.",
@@ -2534,11 +2534,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "409ede5775f7b9a30856a3f743859f45",
+            "id": "47947c1a84065005be7d8f5f116f26d9",
             "name": "Get Events Teams",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/teams\/",
             "description": "Returns a list of attendee-team for the event.",
@@ -2557,11 +2557,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "62c455b62f2343921229fc2cd8fe5cca",
+            "id": "ce02eb2115c6630b5522ed3c45feab95",
             "name": "Get Events Teams",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/teams\/{id}\/",
             "description": "Returns information for a single attendee-team.",
@@ -2580,11 +2580,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "b293faa9a79bc02fa3b10d910b565609",
+            "id": "b0263be9d70594a1f97b7cb8a2c4150d",
             "name": "Get Events Teams Attendees",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/teams\/{id}\/attendees\/",
             "description": "Returns attendee for a single attendee-team.",
@@ -2603,11 +2603,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "7dc6a00958599a088336b6573571f349",
+            "id": "ee3de23ef6f4b3e311db77ba2cced841",
             "name": "Get Events Event Ticket Groups",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/:event_id\/ticket_groups\/",
             "description": "Get the list of ticket_group for the event with the specified :event_id.\nBy default, only the ticket groups that are live are shown.",
@@ -2634,11 +2634,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "3f055f93ff89ffd6d45c788e23663b39",
+            "id": "fbc65b0b79097e1fc4432cab597fd516",
             "name": "Post Events Event Ticket Classes Ticket Class Ticket Groups Ticket Group",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/:event_id\/ticket_classes\/:ticket_class_id\/ticket_groups\/:ticket_group_id\/",
             "description": "Add the Ticket Class with the specified :ticket_class_id that belongs to the event with :event_id to the Ticket Group identified by :ticket_group_id.",
@@ -2657,11 +2657,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "a91fe564d74cac3e24c62d152e81c063",
+            "id": "82b6ee1e48435beb146c679075cacd58",
             "name": "Delete Events Event Ticket Classes Ticket Class Ticket Groups Ticket Group",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/:event_id\/ticket_classes\/:ticket_class_id\/ticket_groups\/:ticket_group_id\/",
             "description": "Remove the Ticket Class with the specified :ticket_class_id that belongs to the event with :event_id from the Ticket Group identified by :ticket_group_id.",
@@ -2680,11 +2680,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "88b21aa96c65cc803c1f0c5cbcc19dca",
+            "id": "6776f867da82419ea1ce5b927f97c294",
             "name": "Get Events Event Ticket Classes Ticket Class Ticket Groups",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/:event_id\/ticket_classes\/:ticket_class_id\/ticket_groups\/",
             "description": "Get the Ticket Groups for Ticket Class with the specified :ticket_class_id that belongs to the event with :event_id.\nBy default, only the ticket groups that are live are shown.",
@@ -2711,11 +2711,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "73d846f6127a3bb55e1cc7debccaa7d9",
+            "id": "067c563aa58fa454382ac7bfb0bf8161",
             "name": "Get Events Ticket Buyer Settings",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/ticket_buyer_settings\/",
             "description": "Returns a ticket_buyer_settings for an event.",
@@ -2734,11 +2734,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "c508255e96574a2259dde6fd66a29faf",
+            "id": "bf1b49a53e0cd3ecd9e74f97ea5cc2ce",
             "name": "Post Events Ticket Buyer Settings",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/{id}\/ticket_buyer_settings\/",
             "description": "Updates the ticket buyer settings for an event. Returns a ticket_buyer_settings.",
@@ -2786,11 +2786,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "22304f61b28a4fb11cb83ff242be9012",
+            "id": "4ba644fade386e991b364ea0d01b1a9c",
             "name": "Get Formats",
             "url": "httpswww.eventbriteapi.com\/v3\/\/formats\/",
             "description": "Returns a list of format as formats.",
@@ -2809,11 +2809,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "11cdda7d55a22b31868ff8d4b8462bf0",
+            "id": "9781a737cc9bfe1caeb97a353b817fd3",
             "name": "Get Formats",
             "url": "httpswww.eventbriteapi.com\/v3\/\/formats\/{id}\/",
             "description": "Gets a format by ID as format.",
@@ -2832,11 +2832,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "c685addd90427e8d8808981fa9ce3d37",
+            "id": "246ddeda3831d0641a71eaadde5d8936",
             "name": "Get Media",
             "url": "httpswww.eventbriteapi.com\/v3\/\/media\/{id}\/",
             "description": "Return an image for a given id.",
@@ -2870,11 +2870,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "916af991cc401386c8adb63a76e6ae02",
+            "id": "ad72704d94ccaf13cfc24f4bf03d8d4c",
             "name": "Get Media Upload",
             "url": "httpswww.eventbriteapi.com\/v3\/\/media\/upload\/",
             "description": "See Media Uploads.",
@@ -2901,11 +2901,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "f8455be3fe27dd5cfb4ea36a2137769c",
+            "id": "e37be773ab8efc80cc5dc7715653c2e8",
             "name": "Get Users Me Notifications",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/me\/notifications\/",
             "description": "Gets a paginated response of notification objects for a determined user.",
@@ -2924,11 +2924,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "48fba537aff5f49cbf87f7833b65c423",
+            "id": "25ada6f44845876cacaf015d323c307c",
             "name": "Get Orders",
             "url": "httpswww.eventbriteapi.com\/v3\/\/orders\/{id}\/",
             "description": "Gets an order by ID an order object.",
@@ -2947,11 +2947,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "d3f64f303e9edbb15b1b4f4e8c44db39",
+            "id": "297fa1603dfdee78ed747c0c25bf7e55",
             "name": "Get Users User Organizations",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/:user_id\/organizations\/",
             "description": "Returns a continuated list of organizations\naccessible to the current user.",
@@ -2970,11 +2970,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "9c59a809fbb4cda20b8640ebd9f58dc4",
+            "id": "e1b26ecb7274b64e7a503b193c8bbc2b",
             "name": "Post Organizers",
             "url": "httpswww.eventbriteapi.com\/v3\/\/organizers\/",
             "description": "Makes a new organizer. Returns an organizer as organizer.",
@@ -3050,11 +3050,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "99ce67946229eb0475f8b6c39af59d6d",
+            "id": "03b3b2cb000f0ffad326a2ff6561122a",
             "name": "Get Organizers",
             "url": "httpswww.eventbriteapi.com\/v3\/\/organizers\/{id}\/",
             "description": "Gets an organizer by ID as organizer.",
@@ -3073,11 +3073,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "fbbd4ae6b7625b559ecc3413707bca45",
+            "id": "fec6063d047b0c16f61792d485ff7385",
             "name": "Post Organizers",
             "url": "httpswww.eventbriteapi.com\/v3\/\/organizers\/{id}\/",
             "description": "Updates an organizer and returns it as as organizer.",
@@ -3153,11 +3153,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "a155e005deda88358c8f7cc8dabec64e",
+            "id": "3138eeb5b3d00724c5c0711754e2b0a9",
             "name": "Get Organizers Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/organizers\/{id}\/events\/",
             "description": "Gets events of the organizer.",
@@ -3212,11 +3212,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "e5bd8aa8514ad7ffe3c47ab27669a7e0",
+            "id": "33ba87c97ea9b6f7fb13cbc01c596a8d",
             "name": "Get Pricing Fee Rates",
             "url": "httpswww.eventbriteapi.com\/v3\/\/pricing\/fee_rates\/",
             "description": "Returns a list of fee_rate objects for the different\ncurrencies, countries, assortments and sales channels we sell through\ntoday and in the future.",
@@ -3278,11 +3278,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "81e53927580a0f7bb83712182d7d916c",
+            "id": "1c638dbcd6430d45040d55059a2a7d73",
             "name": "Get Refund Requests",
             "url": "httpswww.eventbriteapi.com\/v3\/\/refund_requests\/{id}\/",
             "description": "Gets a refund-request for the specified refund request.",
@@ -3301,11 +3301,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "ab00929b3923f7660bcd866ed1204673",
+            "id": "6cff5bf60f704e93f1efcc5dbd07e672",
             "name": "Post Refund Requests",
             "url": "httpswww.eventbriteapi.com\/v3\/\/refund_requests\/{id}\/",
             "description": "Update a refund-request for a specific order. Each element in items is a refund-item",
@@ -3360,11 +3360,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "b2a2d1f525c1ba6d7efbfba416ed635e",
+            "id": "5b0aa7410787a8acb2c44cb0ae768495",
             "name": "Post Refund Requests",
             "url": "httpswww.eventbriteapi.com\/v3\/\/refund_requests\/",
             "description": "Creates a refund-request for a specific order. Each element in items is a refund-item",
@@ -3419,11 +3419,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "c104a2d69da38721c8f1f3bdc127a242",
+            "id": "a0da1476e4f5d1732731d3271a5af27b",
             "name": "Get Reports Sales",
             "url": "httpswww.eventbriteapi.com\/v3\/\/reports\/sales\/",
             "description": "Returns a response of the aggregate sales data.",
@@ -3506,11 +3506,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "0845a8de9da07d7205bb223cdb15cf77",
+            "id": "a98ab29788b726d49483c1481b8a9e87",
             "name": "Get Reports Attendees",
             "url": "httpswww.eventbriteapi.com\/v3\/\/reports\/attendees\/",
             "description": "Returns a response of the aggregate attendees data.",
@@ -3593,11 +3593,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "070e1c3d5b8531102ed708f446ded83e",
+            "id": "9ce2db77e203bebd55d05f87559a682b",
             "name": "Get System Timezones",
             "url": "httpswww.eventbriteapi.com\/v3\/\/system\/timezones\/",
             "description": "Returns a paginated response with a key of timezones,\ncontaining a list of timezones.",
@@ -3616,11 +3616,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "ba6e822e434cbc13712442f1fc8bf578",
+            "id": "0a0d789442512b1cc5ddb6c557e4966e",
             "name": "Get System Regions",
             "url": "httpswww.eventbriteapi.com\/v3\/\/system\/regions\/",
             "description": "Returns a single page response with a key of regions,\ncontaining a list of regions.",
@@ -3639,11 +3639,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "a6d472a6a8484e1cc0488e6e4d50b320",
+            "id": "a8982d91925b094800f710e9693e2dbd",
             "name": "Get System Countries",
             "url": "httpswww.eventbriteapi.com\/v3\/\/system\/countries\/",
             "description": "Returns a single page response with a key of countries,\ncontaining a list of countries.",
@@ -3662,11 +3662,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "1567084f2e8d49f9aeafde69ebb04dfb",
+            "id": "e15c9e942e74efe66f1dd406e585da6b",
             "name": "Get Ticket Groups Ticket Group",
             "url": "httpswww.eventbriteapi.com\/v3\/\/ticket_groups\/:ticket_group_id\/",
             "description": "Returns the ticket_group with the specified :ticket_group_id.",
@@ -3685,11 +3685,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "284b01d737f937de871839c724e2e5af",
+            "id": "02cbf4fcdda103b05a320e3b670cd451",
             "name": "Delete Ticket Groups Ticket Group",
             "url": "httpswww.eventbriteapi.com\/v3\/\/ticket_groups\/:ticket_group_id\/",
             "description": "Deletes the ticket_group with the specified :ticket_group_id.\nThe status of the ticket group is changed to deleted.",
@@ -3708,11 +3708,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "e9181db7d6b629953c62ead973b0f690",
+            "id": "6aecdb338189dfaee731e371cd4f32fd",
             "name": "Post Ticket Groups Ticket Group",
             "url": "httpswww.eventbriteapi.com\/v3\/\/ticket_groups\/:ticket_group_id\/",
             "description": "Updates the ticket group with the specified :ticket_group_id. Returns the updated ticket_group.",
@@ -3753,11 +3753,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "0b3ad55cbf36642679085ec94d960d3b",
+            "id": "c0c36cdd19b3ff71e4912107448da38b",
             "name": "Post Ticket Groups",
             "url": "httpswww.eventbriteapi.com\/v3\/\/ticket_groups\/",
             "description": "Creates a ticket group and returns the created ticket_group.\nOnly up to 200 live ticket groups may be created; those with archived or deleted status are not taken into account.",
@@ -3798,11 +3798,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "6524873a6acd82aa980b3def05cf7296",
+            "id": "918349ae2fdae555adcc50a28f5f24dc",
             "name": "Post Tracking Beacons",
             "url": "httpswww.eventbriteapi.com\/v3\/\/tracking_beacons\/",
             "description": "Makes a new tracking beacon. Returns an tracking_beacon as tracking_beacon. Either event_id or user_id is required for each tracking beacon. If the event_id is provided, the tracking pixel will fire only for that event. If the user_id is provided, the tracking pixel will fire for all events organized by that user.",
@@ -3857,11 +3857,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "37d2fb9db48d40bf4c65d02f169bdb71",
+            "id": "ea2ff98108d04e89a39ca3781ac87489",
             "name": "Get Tracking Beacons Tracking Beacons",
             "url": "httpswww.eventbriteapi.com\/v3\/\/tracking_beacons\/:tracking_beacons_id\/",
             "description": "Returns the tracking_beacon with the specified :tracking_beacons_id.",
@@ -3888,11 +3888,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "ea90ccf1378f999f963f2899eed6156b",
+            "id": "b00e3caf9fc53f087a33bfb8d3a5b311",
             "name": "Post Tracking Beacons Tracking Beacons",
             "url": "httpswww.eventbriteapi.com\/v3\/\/tracking_beacons\/:tracking_beacons_id\/",
             "description": "Updates the tracking_beacons with the specified :tracking_beacons_id. Though event_id and user_id are not individually required, it is a requirement to have a tracking beacon where either one must exist. Returns an tracking_beacon as tracking_beacon.",
@@ -3947,11 +3947,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "ff1a5f8bb4e2150b1ada1f7023c11b41",
+            "id": "7a0ebac57b0a462603a066ed24474abb",
             "name": "Delete Tracking Beacons Tracking Beacons",
             "url": "httpswww.eventbriteapi.com\/v3\/\/tracking_beacons\/:tracking_beacons_id\/",
             "description": "Delete the tracking_beacons with the specified :tracking_beacons_id.",
@@ -3970,11 +3970,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "cc63be385a518ac1d9122aeeafdb513d",
+            "id": "179f21694cad6b1e5fcd51c192a6ad04",
             "name": "Get Events Event Tracking Beacons",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/:event_id\/tracking_beacons\/",
             "description": "Returns the list of tracking_beacon for the event :event_id",
@@ -4001,11 +4001,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "53d87f0ec853ddcb37a045981ce28639",
+            "id": "6eb0715c985f32dac055aa7ff9bb9a87",
             "name": "Get Users User Tracking Beacons",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/:user_id\/tracking_beacons\/",
             "description": "Returns the list of tracking_beacon for the user :user_id",
@@ -4032,11 +4032,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "4e0558e5a54a2214346d270c8b7753fb",
+            "id": "b6617f321aed35d303a56b87cebf6b78",
             "name": "Get Users",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/",
             "description": "Returns a user for the specified user as user. If you want to get details about the currently authenticated user, use \/users\/me\/.",
@@ -4055,11 +4055,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "c0db29ffed22ce27e90aee5eb5ee3a14",
+            "id": "17224b24dff07494bfcbc0c308e53803",
             "name": "Get Users Orders",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/orders\/",
             "description": "Returns a paginated response of orders, under the key orders, of all orders the user has placed (i.e. where the user was the person buying the tickets).",
@@ -4086,11 +4086,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "cb63e9ec620b720fa00c16a21b6cfe75",
+            "id": "3b6771c17cb6631ccb1192c60d7736c6",
             "name": "Get Users Organizers",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/organizers\/",
             "description": "Returns a paginated response of organizer objects that are owned by the user.",
@@ -4117,11 +4117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "62cc9bea3e54379a0f4fa69e243a0bf4",
+            "id": "cd2f24ed0cafc36adc51bf109a9b345a",
             "name": "Get Users Owned Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/owned_events\/",
             "description": "Returns a paginated response of events, under\nthe key events, of all events the user owns (i.e. events they are organising)",
@@ -4162,11 +4162,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "3bec38367f217ff8c86d5460755f0213",
+            "id": "67176d5a557695ff96bf39a10e5517bc",
             "name": "Get Users Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/events\/",
             "description": "Returns a paginated response of events, under the key events, of all events the user has access to",
@@ -4249,11 +4249,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "4fb2900b0ffa422e97a3d851c8131ad3",
+            "id": "71c8fb148366468938070433504ce6cc",
             "name": "Post Organizations Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/organizations\/{id}\/events\/",
             "description": "Creates new events objects under an organization and returns it as event.",
@@ -4462,11 +4462,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "0432a79c99e4be6b45263c73b807bb1a",
+            "id": "070215b6309b7f677918f8d593ac929f",
             "name": "Get Users Venues",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/venues\/",
             "description": "Returns a paginated response of venue objects that are owned by the user.",
@@ -4485,11 +4485,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "b53bfed3bd9c9afbbc1a7d66d0fb3757",
+            "id": "59a8cd88b464b33d5068dc7ce30977ac",
             "name": "Post Organizations Venues",
             "url": "httpswww.eventbriteapi.com\/v3\/\/organizations\/{id}\/venues\/",
             "description": "Creates new venue objects under an organization and returns it as venue.",
@@ -4600,11 +4600,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "e01e6279a97d3158db4932822848f6ee",
+            "id": "a2fdedf4bba94ea653536c7c1d61ca66",
             "name": "Get Users Owned Event Attendees",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/owned_event_attendees\/",
             "description": "Returns a paginated response of attendees,\nunder the key attendees, of attendees visiting any of the events the user owns\n(events that would be returned from \/users\/:id\/owned_events\/)",
@@ -4638,11 +4638,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "1c7823604a093b1d19f257ea7416def4",
+            "id": "dea185360b58a46c4709bfd44d2ff15a",
             "name": "Get Users Owned Event Orders",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/owned_event_orders\/",
             "description": "Returns a paginated response of orders,\nunder the key orders, of orders placed against any of the events the user owns\n(events that would be returned from \/users\/:id\/owned_events\/)",
@@ -4690,11 +4690,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "2b5eabf59f6b858c11ee36bfb8440de3",
+            "id": "1fbfd664940864ce2c045f3946791bfc",
             "name": "Get Users Contact Lists",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/contact_lists\/",
             "description": "Returns a list of contact_list that the user owns as the key\ncontact_lists.",
@@ -4713,11 +4713,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "1dd8a1ad54648e411a42c8050840c498",
+            "id": "1d9d93bba2323aac4f1d0180b3ec7482",
             "name": "Post Users Contact Lists",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/contact_lists\/",
             "description": "Makes a new contact_list for the user and returns it as\ncontact_list.",
@@ -4744,11 +4744,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "10a6620713593c86c4339646677c4197",
+            "id": "5934b0d42188100c21098f44f198ee0f",
             "name": "Get Users Contact Lists Contact List",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/contact_lists\/:contact_list_id\/",
             "description": "Gets a user&#8217;s contact_list by ID as contact_list.",
@@ -4767,11 +4767,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "00611afbdb835bb6d537d1a3f8df200b",
+            "id": "a96cc66bf7ee8341b10c6d029fbd6bd1",
             "name": "Post Users Contact Lists Contact List",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/contact_lists\/:contact_list_id\/",
             "description": "Updates the contact_list and returns it as contact_list.",
@@ -4798,11 +4798,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "4ee96f59a7cdd6edd896b2a1c7dc9ed9",
+            "id": "742928c631046afab1a3977e4f3b077d",
             "name": "Delete Users Contact Lists Contact List",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/contact_lists\/:contact_list_id\/",
             "description": "Deletes the contact list. Returns {&quot;deleted&quot;: true}.",
@@ -4821,11 +4821,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "5a20f3361070277e6c00a7d13b98f094",
+            "id": "04c81aea18f4ab6441d6bb13fe8705fe",
             "name": "Get Users Contact Lists Contact List Contacts",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/contact_lists\/:contact_list_id\/contacts\/",
             "description": "Returns the contacts on the contact list\nas contacts.",
@@ -4844,11 +4844,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "282043cdb6e7e0a55309637c706a76b7",
+            "id": "a4baee9f8958184130430b3b8e1c293a",
             "name": "Post Users Contact Lists Contact List Contacts",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/contact_lists\/:contact_list_id\/contacts\/",
             "description": "Adds a new contact to the contact list. Returns {&quot;created&quot;: true}.",
@@ -4889,11 +4889,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "4c4cf8af8c7df31c2fbb82e37fd7f3ed",
+            "id": "26c2d37f8833b460b3785f37205dc02e",
             "name": "Delete Users Contact Lists Contact List Contacts",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/contact_lists\/:contact_list_id\/contacts\/",
             "description": "Deletes the specified contact from the contact list.\nReturns {&quot;deleted&quot;: true}.",
@@ -4920,11 +4920,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "a4d70ef71d083bd3061c82b3dcee394e",
+            "id": "c29fd4f8a97cebc52ecdd6fd37e13d3d",
             "name": "Get Users Bookmarks",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/bookmarks\/",
             "description": "Gets all the user&#8217;s saved events.",
@@ -4951,11 +4951,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "e9fd102c6c77ccaa4dfb0e13dc45e553",
+            "id": "d8cfa73d0d9ccbd5ccda278864f0331e",
             "name": "Post Users Bookmarks Save",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/bookmarks\/save\/",
             "description": "Adds a new bookmark for the user. Returns {&quot;created&quot;: true}.",
@@ -4996,11 +4996,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "0b17b673a11f3cea8c8f28ed282ed21a",
+            "id": "0f93b22efb734c97d1f51675d574695d",
             "name": "Post Users Bookmarks Unsave",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/bookmarks\/unsave\/",
             "description": "Removes the specified bookmark from the event for the user. Returns {&quot;deleted&quot;: true}.",
@@ -5041,11 +5041,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "b307f6a4f0c6aa173251f905ffdf9f7a",
+            "id": "fe9500e105c7f984ae242aca8d35985e",
             "name": "Get Users User Ticket Groups",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/:user_id\/ticket_groups\/",
             "description": "Returns a paginated response of ticket_group for the specified user.\nThe alias me (\/users\/me\/) may be used to refer to the currently authenticated user.",
@@ -5072,11 +5072,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "3a4916b09ca4d5b58ccc770c53ab166e",
+            "id": "60a60c2e4e3743414fb1de9163e19d8c",
             "name": "Post Users User Events Event Ticket Classes Ticket Class Ticket Groups",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/:user_id\/events\/:event_id\/ticket_classes\/:ticket_class_id\/ticket_groups\/",
             "description": "Add the Ticket Class with the specified :ticket_class_id of the event with :event_id that\nbelongs to the user with :user_id to many Ticket Groups specified with ticket_group_ids.\nIf the list provided is empty, remove this ticket class from every ticket group.",
@@ -5103,11 +5103,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "97de6e1974074737aeaafe14d0c64dda",
+            "id": "d73bbd6e2fb737315ef6728f8ccbc790",
             "name": "Get Users User Discounts",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/:user_id\/discounts\/",
             "description": "Returns a paginated response of cross_event_discount for the specified user.\nThis operation is only supported for the currently authenticated user. The alias me (\/users\/me\/) may be used.",
@@ -5183,11 +5183,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "8a314f6e8f22a30e5aa1da602669ae14",
+            "id": "f8f4c869b89b4240e66f3585b67b816c",
             "name": "Get Users Assortment",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/assortment\/",
             "description": "Retrieve the assortment for the user.",
@@ -5206,11 +5206,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "ac80f3cde9469bfe84bb8f729114083b",
+            "id": "369b34385f568d13409d1738732992af",
             "name": "Post Users Assortment",
             "url": "httpswww.eventbriteapi.com\/v3\/\/users\/{id}\/assortment\/",
             "description": "Set a user&#8217;s assortment and returns the assortment for the specified\nuser.",
@@ -5237,11 +5237,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "369ba2a6ebb15148e68a94ea5e6baca9",
+            "id": "cea257bdd675ab0593e2c8b25d9109c6",
             "name": "Get Venues",
             "url": "httpswww.eventbriteapi.com\/v3\/\/venues\/{id}\/",
             "description": "Returns a venue object.",
@@ -5260,11 +5260,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "be2ab2be6c001293429cad40a29441af",
+            "id": "1b65b4ac16bc98845d0c2263a5fd7d4d",
             "name": "Post Venues",
             "url": "httpswww.eventbriteapi.com\/v3\/\/venues\/{id}\/",
             "description": "Updates a venue and returns it as an object.",
@@ -5375,11 +5375,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "ab05d383c8617854c1248de8371bbce8",
+            "id": "457c52e9ec65481cd7d1882c4b47d4dc",
             "name": "Post Venues",
             "url": "httpswww.eventbriteapi.com\/v3\/\/venues\/",
             "description": "Creates a new venue with associated address.",
@@ -5490,11 +5490,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "a62969f80065ab850ed8a4f026a3cd24",
+            "id": "0a87f9e98410f8befee1f89a46b4bf83",
             "name": "Get Venues Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/venues\/{id}\/events\/",
             "description": "Returns events of a given venue.",
@@ -5549,11 +5549,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "8640bebee89960439822897ffc4232b7",
+            "id": "0e316c7e9bf990b42663f30d32338438",
             "name": "Get Webhooks",
             "url": "httpswww.eventbriteapi.com\/v3\/\/webhooks\/{id}\/",
             "description": "Returns a webhook for the specified webhook as webhook.",
@@ -5572,11 +5572,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "e2a55651b8d71514edc25de82ce29fbb",
+            "id": "b6b29dd9115a2b571fee71bc0939bbf5",
             "name": "Delete Webhooks",
             "url": "httpswww.eventbriteapi.com\/v3\/\/webhooks\/{id}\/",
             "description": "Deletes the specified webhook object.",
@@ -5595,11 +5595,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "ba3a8aa1edacee3007515e6d2e7bcdf4",
+            "id": "ac22ae7ba8a9898d406a4aacb2c20b3c",
             "name": "Get Webhooks",
             "url": "httpswww.eventbriteapi.com\/v3\/\/webhooks\/",
             "description": "Returns the list of webhook objects that belong to the authenticated user.",
@@ -5618,11 +5618,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "a4af9d98a15139f269df1be4e1e61f77",
+            "id": "4b2e80554be60b1410f755485958d474",
             "name": "Post Webhooks",
             "url": "httpswww.eventbriteapi.com\/v3\/\/webhooks\/",
             "description": "Creates a webhook for the authenticated user.",
@@ -5663,11 +5663,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "828c790f3c45100265cdc213a58f701a",
+            "id": "0b9c4ce79e82d766b49355b8f15e580f",
             "name": "Post Series",
             "url": "httpswww.eventbriteapi.com\/v3\/\/series\/",
             "description": "Creates a new repeating event series. The POST data must include information for at least one event date in the series.",
@@ -5686,11 +5686,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "eea9bbb031d620cb8029cd5b21ed400e",
+            "id": "96e3d8adf1aabc5e8635ccd2ae72b9d0",
             "name": "Get Series",
             "url": "httpswww.eventbriteapi.com\/v3\/\/series\/{id}\/",
             "description": "Returns a repeating event series parent object for the specified repeating event series.",
@@ -5717,11 +5717,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "751576dc9ed265d2fc9bf2ddf96bdc33",
+            "id": "8e9f2679a394f9c46bef4669367eeda2",
             "name": "Post Series",
             "url": "httpswww.eventbriteapi.com\/v3\/\/series\/{id}\/",
             "description": "Updates a repeating event series parent object, and optionally also creates more event dates or updates or deletes\nexisting event dates in the series. In order for a series date to be deleted or updated, there must be no pending or\ncompleted orders for that date.",
@@ -5740,11 +5740,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "bdd1a624d977849e08ea987fd3e5c965",
+            "id": "a00b3e462034a7443b39a1d0d763a783",
             "name": "Delete Series",
             "url": "httpswww.eventbriteapi.com\/v3\/\/series\/{id}\/",
             "description": "Deletes a repeating event series and all of its occurrences if the delete is permitted. In order for a delete to be\npermitted, there must be no pending or completed orders for any dates in the series. Returns a boolean indicating\nsuccess or failure of the delete.",
@@ -5763,11 +5763,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "37b11d0fe240153226f331286366a15b",
+            "id": "243ffc616cc02e147e01d01b85551f1b",
             "name": "Post Series Publish",
             "url": "httpswww.eventbriteapi.com\/v3\/\/series\/{id}\/publish\/",
             "description": "Publishes a repeating event series and all of its occurrences that are not already canceled or deleted. Once a date is cancelled it can still be uncancelled and can be viewed by the public. A deleted date cannot be undeleted and cannot by viewed by the public. In order for\npublish to be permitted, the event must have all necessary information, including a name and description, an organizer,\nat least one ticket, and valid payment options. This API endpoint will return argument errors for event fi",
@@ -5786,11 +5786,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "20dae67f0f7702444fddb911f7f50883",
+            "id": "0b017b8654c2e7b67dd6640b964fd0ed",
             "name": "Post Series Unpublish",
             "url": "httpswww.eventbriteapi.com\/v3\/\/series\/{id}\/unpublish\/",
             "description": "Unpublishes a repeating event series and all of its occurrences that are not already completed, canceled, or deleted. In\norder for a free series to be unpublished, it must not have any pending or completed orders for any dates, even past\ndates. In order for a paid series to be unpublished, it must not have any pending or completed orders for any dates,\nexcept that completed orders for past dates that have been completed and paid out do not prevent an unpublish. Returns\na boolean indicating succe",
@@ -5809,11 +5809,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "93125c0dc018367be6f19bb8ccce8b53",
+            "id": "1b181b9adf9ed9c92b81306fb1e715d5",
             "name": "Post Series Cancel",
             "url": "httpswww.eventbriteapi.com\/v3\/\/series\/{id}\/cancel\/",
             "description": "Cancels a repeating event series and all of its occurrences that are not already canceled or deleted. In order for\ncancel to be permitted, there must be no pending or completed orders for any dates in the series. Returns a boolean\nindicating success or failure of the cancel.",
@@ -5832,11 +5832,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "584c9272c71cd7599c71b54688d41f70",
+            "id": "b12113fcaf5180d5292072d67dee44f4",
             "name": "Get Series Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/series\/{id}\/events\/",
             "description": "Returns all of the events that belong to this repeating event series.",
@@ -5877,11 +5877,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "2260c708822be1d0da190df698479f2f",
+            "id": "5bf1b5ca983e071d08205f975ada4b8d",
             "name": "Post Series Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/series\/{id}\/events\/",
             "description": "Creates more event dates or updates or deletes existing event dates in a repeating event series. In order for a series\ndate to be deleted or updated, there must be no pending or completed orders for that date.",
@@ -5900,11 +5900,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "0d96be4920fb32e7544bc461d3e90171",
+            "id": "431315c78a3cd748a1ce91b849e81ba7",
             "name": "Event Search",
             "url": "httpswww.eventbriteapi.com\/v3\/\/events\/search\/",
             "description": "This method uses our search index to find publicly listed events.",
@@ -6085,11 +6085,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "6e596ec32aeaba77e5f9376fc1e561ec",
+            "id": "fe6abaa22db3d79d6b2140ff90340cee",
             "name": "Get Event Get",
             "url": "httpswww.eventbriteapi.com\/v3\/\/event_get",
             "description": "This method returns the data for a given event. Only public events are viewable if no authentication is passed.",
@@ -6123,11 +6123,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "12ce86fab924335b66cd0292eb7dd15b",
+            "id": "4d9083040ae6dfb7cec53e093134ace0",
             "name": "Get Event New",
             "url": "httpswww.eventbriteapi.com\/v3\/\/event_new",
             "description": "This method creates a new event. It returns the ID of the newly created event.",
@@ -6308,11 +6308,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "710992641f4f0d5c0fdbd993cae27296",
+            "id": "28ac67a0aa7cea8e9caef3217b7c8d1a",
             "name": "Get Event Update",
             "url": "httpswww.eventbriteapi.com\/v3\/\/event_update",
             "description": "This method updates an existing event. Only the fields passed as arguments will be modified. This method returns the ID of the modified event.",
@@ -6500,11 +6500,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "af767fbdc652862bd3d41f34d9dad189",
+            "id": "ad72cb8a985405450fb0dc3358f8b25a",
             "name": "Get Event Copy",
             "url": "httpswww.eventbriteapi.com\/v3\/\/event_copy",
             "description": "This method duplicates an existing event, returning the ID of the new event.",
@@ -6545,11 +6545,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "8a9ac1e5bf74f2c13c616ae8687d4304",
+            "id": "4e0b73e35691f60b58bebb1fde5d1bba",
             "name": "Get User List Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/user_list_events",
             "description": "This method lists the events created by this user. Only public events are returned if no authentication is passed.",
@@ -6604,11 +6604,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "16e9816b3f29b6aed99486f76f2d38f9",
+            "id": "ed892b1dd0af775efdaf696167b2ae83",
             "name": "Get Ticket New",
             "url": "httpswww.eventbriteapi.com\/v3\/\/ticket_new",
             "description": "This method creates new fixed-price or donation ticket types. It returns the ID of the newly created ticket.",
@@ -6712,11 +6712,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "ab9702fea1e507c2ecf0fe600da169e0",
+            "id": "e81c74699617e7513a6073f05d1baf89",
             "name": "Get Ticket Update",
             "url": "httpswww.eventbriteapi.com\/v3\/\/ticket_update",
             "description": "This method updates an existing ticket type. Only the fields passed as arguments will be modified. It returns the ID of the updated ticket.",
@@ -6827,11 +6827,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "74220c80612e53165240f202ee312510",
+            "id": "b9757de964fd3d38968c938069650913",
             "name": "Get Event List Attendees",
             "url": "httpswww.eventbriteapi.com\/v3\/\/event_list_attendees",
             "description": "This method returns a list of attendees for a given event. If no authentication is passed, only publicly available attendee records will be returned.",
@@ -6893,11 +6893,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "769e1fd6d266c65944fceba29a8d34e4",
+            "id": "f70b4c0f31eed77e4df2b659a58f85ae",
             "name": "Get Venue Get",
             "url": "httpswww.eventbriteapi.com\/v3\/\/venue_get",
             "description": "This method returns a single venue by id.",
@@ -6931,11 +6931,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "043192420be674b2dfd60a8c12e86c98",
+            "id": "973bab8d173f2251daa0b65680c3e5c0",
             "name": "Get Venue New",
             "url": "httpswww.eventbriteapi.com\/v3\/\/venue_new",
             "description": "This method creates a new venue. It returns the ID of the newly created venue.",
@@ -7018,11 +7018,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "f1390b18f785fc86e63e236bb71564d5",
+            "id": "cebe0ae35211d624884a143c11b92ab9",
             "name": "Get Venue Update",
             "url": "httpswww.eventbriteapi.com\/v3\/\/venue_update",
             "description": "This method updates an existing venue. Only the fields passed as arguments will be modified. It returns the ID of the updated venue.",
@@ -7105,11 +7105,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "3b24750527b3e6e327e9f9c3f26649c3",
+            "id": "1423c785b98497851675a5259908160c",
             "name": "Get User List Venues",
             "url": "httpswww.eventbriteapi.com\/v3\/\/user_list_venues",
             "description": "This method lists the venues created by this user. Requires authentication.",
@@ -7136,11 +7136,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "6059fc546571396a9a6e2eb2fb246306",
+            "id": "0b1c6cd7756ab51f9dcdec7a7e940152",
             "name": "Get Organizer List Events",
             "url": "httpswww.eventbriteapi.com\/v3\/\/organizer_list_events",
             "description": "This method returns a list of events for a given organizer.",
@@ -7174,11 +7174,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "17e7f1df857bfb3fd5a460b716bc0e2d",
+            "id": "c6cf07d61473d25c1206a1d6399c9650",
             "name": "Get Organizer Get",
             "url": "httpswww.eventbriteapi.com\/v3\/\/organizer_get",
             "description": "This method returns a single organizer by id.",
@@ -7212,11 +7212,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "4a586636d1a87436209c701e31c793c3",
+            "id": "478ef55759a5a72ab5cd01a031db2538",
             "name": "Get Organizer New",
             "url": "httpswww.eventbriteapi.com\/v3\/\/organizer_new",
             "description": "Many event creators prefer having a specific person identified as the point of contact for their event. This person is usually someone like the event emcee, or an on-site contact that can help with attendee check-ins or other issues during the event. This method creates a new organizer, and returns the organizer_id for the newly created resource.",
@@ -7257,11 +7257,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "7e3ec394a72da994e2755ec4273f6c45",
+            "id": "5980013e2571d5c2e8b326870cfdb9b9",
             "name": "Get Organizer Update",
             "url": "httpswww.eventbriteapi.com\/v3\/\/organizer_update",
             "description": "This method updates an existing organizer. Only the fields passed as arguments will be modified. It returns the ID of the updated organizer.",
@@ -7309,11 +7309,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "a885c6b0b8beb2c73718fab5866d8f68",
+            "id": "bdfaa9b3251b481cef8d8798a689d689",
             "name": "Get User List Organizers",
             "url": "httpswww.eventbriteapi.com\/v3\/\/user_list_organizers",
             "description": "This method lists the organizers created by this user. Requires authentication.",
@@ -7340,11 +7340,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "e8e1283db4f5f25cf43a2a4b61efbcbc",
+            "id": "bc09ac360d01b37b181dd465e5b2163d",
             "name": "Get User List Tickets",
             "url": "httpswww.eventbriteapi.com\/v3\/\/user_list_tickets",
             "description": "This method lists the tickets purchased by the authenticated user. Each transaction is an order in our system and an order may contain one or more tickets. Tickets to free events are included.",
@@ -7371,11 +7371,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "16dc9da923d43636518e08601928cb75",
+            "id": "0c115ddc366ef51c122c2e31a5c9a491",
             "name": "Get User Get",
             "url": "httpswww.eventbriteapi.com\/v3\/\/user_get",
             "description": "This method returns the user account identified by the user_id or email request parameters. Visibility is limited to users and sub-users of the given user_key.",
@@ -7416,11 +7416,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "20e41c50a984ed48f7ec4166d32e1dce",
+            "id": "6a2c4ab03e5f0cb8bd3eef4a7e409c2f",
             "name": "Get User New",
             "url": "httpswww.eventbriteapi.com\/v3\/\/user_new",
             "description": "This method creates a new user, returning the user???s ID in the response.",
@@ -7461,11 +7461,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "4291685f63d2ef9d3a00fe1b97f3be88",
+            "id": "2d6f32616a32d75276757fbff8c4eb32",
             "name": "Get User Update",
             "url": "httpswww.eventbriteapi.com\/v3\/\/user_update",
             "description": "This method updates an existing user. Only the fields passed as arguments will be modified. It returns the ID of the updated user.",
@@ -7506,11 +7506,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "5b55a5b0e75dbdbfe2df95b9f6c7743c",
+            "id": "94978923d31dab407d1ef8b398e93b6a",
             "name": "Get Event List Discounts",
             "url": "httpswww.eventbriteapi.com\/v3\/\/event_list_discounts",
             "description": "This method returns a list of discounts for a given event.",
@@ -7544,11 +7544,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "38ee753719e85774c7fbaabb392664c3",
+            "id": "6fd1edd95f123fd3688530fb9a3a40f0",
             "name": "Get Discount New",
             "url": "httpswww.eventbriteapi.com\/v3\/\/discount_new",
             "description": "This method creates a new discount code for a specific event. It returns the ID of the newly created discount code.",
@@ -7631,11 +7631,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "4598182cc008a485517a4139e59ae3dc",
+            "id": "6d44a165ae2fa02af335472a987d89de",
             "name": "Get Discount Update",
             "url": "httpswww.eventbriteapi.com\/v3\/\/discount_update",
             "description": "This method is used to update an existing discount code. Only the fields passed as arguments will be modified. This method returns the ID of the modified discount code.",
@@ -7718,11 +7718,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         },
         {
-            "id": "8a2abe8f42e0ad0653ba934abbebe321",
+            "id": "807df977b61090f4e04aca0e09fa8033",
             "name": "Get Payment Update",
             "url": "httpswww.eventbriteapi.com\/v3\/\/payment_update",
             "description": "This method creates or updates the payment options for this event. Only the fields passed as arguments will be modified.",
@@ -7833,7 +7833,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e56d469f895f8fcdc3d65689bcf07553",
+            "collectionId": "11a4f0b61338449eda75b6ad4edc3a01",
             "rawModeData": ""
         }
     ]
