@@ -17,8 +17,8 @@
         "tickets",
         "webhook implementations"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -32,7 +32,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-categories-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-categories-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -40,7 +40,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-categories-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-categories-api-postman-collection.json"
                 }
             ]
         },
@@ -54,7 +54,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-event-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-event-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -62,7 +62,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-event-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-event-api-postman-collection.json"
                 }
             ]
         },
@@ -76,7 +76,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-users-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-users-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -84,7 +84,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-users-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-users-api-postman-collection.json"
                 }
             ]
         },
@@ -98,7 +98,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-formats-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-formats-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -106,7 +106,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-formats-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-formats-api-postman-collection.json"
                 }
             ]
         },
@@ -120,7 +120,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-media-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-media-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -128,7 +128,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-media-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-media-api-postman-collection.json"
                 }
             ]
         },
@@ -142,7 +142,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-orders-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-orders-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -150,7 +150,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-orders-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-orders-api-postman-collection.json"
                 }
             ]
         },
@@ -164,7 +164,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-organizers-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-organizers-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -172,7 +172,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-organizers-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-organizers-api-postman-collection.json"
                 }
             ]
         },
@@ -186,7 +186,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-system-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-system-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -194,7 +194,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-system-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-system-api-postman-collection.json"
                 }
             ]
         },
@@ -208,7 +208,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-venue-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-venue-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -216,7 +216,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-venue-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-venue-api-postman-collection.json"
                 }
             ]
         },
@@ -230,7 +230,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-webhooks-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-webhooks-api-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -238,7 +238,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-webhooks-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-webhooks-api-postman-collection.json"
                 }
             ]
         },
@@ -256,17 +256,21 @@
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-api-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-api-openapi.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/eventbrite-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/eventbrite\/master\/eventbrite-api-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Apigee Console",
             "url": "https:\/\/api.apigee.com\/v1\/consoles\/eventbrite\/apidescription?format=internal&ver=1351170233000"
