@@ -7,11 +7,99 @@ tags:
   - Events
   - Event Technology
   - Ticketing
-description: 'A global self-service ticketing and event technology platform for live experiences. Enables creators to plan, promote, and sell tickets for events of all sizes.'
+  - Marketplace
+description: 'A global self-service ticketing and event technology platform for live experiences. Enables creators to plan, promote, and sell tickets for events of all sizes. The Eventbrite Platform exposes a REST API plus webhooks that lets developers manage events, attendees, orders, organizations, ticket classes, and venues.'
 created: '2026-05-05'
-modified: '2026-05-05'
+modified: '2026-05-16'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: eventbrite:platform-api
+    name: Eventbrite Platform API
+    tags:
+      - Events
+      - Attendees
+      - Orders
+      - Organizations
+      - Ticket Classes
+      - Venues
+      - Categories
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.eventbrite.com/platform/api
+    baseURL: https://www.eventbriteapi.com/v3
+    description: >-
+      The Eventbrite Platform API is a REST API that lets developers manage
+      events, attendees, orders, organizations, ticket classes, venues,
+      categories, and event series on Eventbrite. The API uses OAuth 2.0 with
+      bearer tokens (private and OAuth-issued tokens); resources are accessed
+      under the v3 base path at https://www.eventbriteapi.com/v3 and return JSON
+      payloads. Typical use cases include syncing event inventory into external
+      sites, fulfilling tickets and check-in flows, embedding event creation
+      into partner platforms, and reporting on attendee and sales data.
+    properties:
+      - type: Documentation
+        url: https://www.eventbrite.com/platform/api
+      - type: SignupURL
+        url: https://www.eventbrite.com/platform/api-keys
+      - type: Authentication
+        url: https://www.eventbrite.com/platform/api#/introduction/authentication
+  - aid: eventbrite:webhooks
+    name: Eventbrite Webhooks
+    tags:
+      - Webhooks
+      - Events
+      - Orders
+      - Notifications
+      - Automation
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.eventbrite.com/platform/api#/reference/webhook
+    baseURL: https://www.eventbriteapi.com/v3
+    description: >-
+      Eventbrite Webhooks deliver HTTP POST notifications to subscriber URLs
+      when events such as event publish/unpublish, order placement and updates,
+      attendee changes, refunds, and check-ins occur on Eventbrite. Developers
+      register webhook endpoints against an organization via the Platform API
+      and use the resulting payloads to drive real-time integrations without
+      polling the REST API.
+    properties:
+      - type: Documentation
+        url: https://www.eventbrite.com/platform/api#/reference/webhook
+  - aid: eventbrite:python-sdk
+    name: Eventbrite Python SDK
+    tags:
+      - SDK
+      - Python
+      - Client Library
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://github.com/eventbrite/eventbrite-sdk-python
+    baseURL: https://www.eventbriteapi.com/v3
+    description: >-
+      The Eventbrite Python SDK is an open-source client library maintained by
+      Eventbrite that provides idiomatic Python access to the Eventbrite
+      Platform API for managing events, orders, attendees, and related
+      resources.
+    properties:
+      - type: SourceCode
+        url: https://github.com/eventbrite/eventbrite-sdk-python
+      - type: SDK
+        url: https://pypi.org/project/eventbrite/
 common:
   - type: Website
     url: https://www.eventbrite.com/
+  - type: DeveloperPortal
+    url: https://www.eventbrite.com/platform/
+  - type: Documentation
+    url: https://www.eventbrite.com/platform/api
+  - type: SignupURL
+    url: https://www.eventbrite.com/platform/api-keys
+  - type: SourceCode
+    url: https://github.com/eventbrite
+  - type: PrivacyPolicy
+    url: https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-privacy-policy
+  - type: TermsOfService
+    url: https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-terms-of-service
+  - type: Support
+    url: https://www.eventbrite.com/support/contact-us
+  - type: Blog
+    url: https://www.eventbrite.com/blog/
+  - type: Login
+    url: https://www.eventbrite.com/signin/
