@@ -83,6 +83,8 @@ apis:
       - type: SDK
         url: https://pypi.org/project/eventbrite/
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/eventbrite
   - type: Website
     url: https://www.eventbrite.com/
   - type: DeveloperPortal
