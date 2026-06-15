@@ -1,0 +1,365 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Eventbrite Platform API",
+    "version": "3.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Users",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the current user",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/users/me/"
+          },
+          "docs": "Returns the authenticated user. Confirmed by the Eventbrite Python SDK README: \"Not passing an argument returns yourself.\""
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Organizations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List organizations for a user",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/users/:user_id/organizations/",
+            "params": [
+              {
+                "name": "user_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List organizations for a user"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Events",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List events for an organization",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/organizations/:organization_id/events/",
+            "params": [
+              {
+                "name": "organization_id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "page",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List events for an organization"
+        },
+        {
+          "info": {
+            "name": "Get an event",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/events/:event_id/",
+            "params": [
+              {
+                "name": "event_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Confirmed by Eventbrite Python SDK README example get_event('my-event-id')."
+        },
+        {
+          "info": {
+            "name": "Update an event",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://www.eventbriteapi.com/v3/events/:event_id/",
+            "params": [
+              {
+                "name": "event_id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update an event"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Ticket Classes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List ticket classes for an event",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/events/:event_id/ticket_classes/",
+            "params": [
+              {
+                "name": "event_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Confirmed by SDK README: ticket_classes accessible via the expansions parameter on events."
+        },
+        {
+          "info": {
+            "name": "Create a ticket class",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://www.eventbriteapi.com/v3/events/:event_id/ticket_classes/",
+            "params": [
+              {
+                "name": "event_id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a ticket class"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Attendees",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List attendees for an event",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/events/:event_id/attendees/",
+            "params": [
+              {
+                "name": "event_id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "changed_since",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "page",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List attendees for an event"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Orders",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List orders for an event",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/events/:event_id/orders/",
+            "params": [
+              {
+                "name": "event_id",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "status",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "page",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List orders for an event"
+        },
+        {
+          "info": {
+            "name": "Get an order",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/orders/:order_id/",
+            "params": [
+              {
+                "name": "order_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get an order"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Venues",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get a venue",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/venues/:venue_id/",
+            "params": [
+              {
+                "name": "venue_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a venue"
+        },
+        {
+          "info": {
+            "name": "List venues for an organization",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/organizations/:organization_id/venues/",
+            "params": [
+              {
+                "name": "organization_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List venues for an organization"
+        },
+        {
+          "info": {
+            "name": "Create a venue under an organization",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://www.eventbriteapi.com/v3/organizations/:organization_id/venues/",
+            "params": [
+              {
+                "name": "organization_id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a venue under an organization"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Categories",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List event categories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/categories/"
+          },
+          "docs": "List event categories"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

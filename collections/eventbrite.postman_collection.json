@@ -1,0 +1,1571 @@
+{
+  "item": [
+    {
+      "id": "97bcc204-89c8-4ce2-9032-2888512ffd8e",
+      "name": "Users",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "2eb9a6a3-1436-4c04-8591-519d39d3b954",
+          "name": "Get the current user",
+          "request": {
+            "name": "Get the current user",
+            "description": {
+              "content": "Returns the authenticated user. Confirmed by the Eventbrite Python SDK README: \"Not passing an argument returns yourself.\"",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "users",
+                "me",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a76c4981-1a81-4a6b-823e-d5ba49e0ebda",
+              "name": "Current user",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "users",
+                    "me",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"first_name\": \"string\",\n  \"last_name\": \"string\",\n  \"emails\": [\n    {\n      \"email\": \"euGx4ce9c@uwqQkm.safj\",\n      \"verified\": true,\n      \"primary\": false\n    },\n    {\n      \"email\": \"3YEtVCWCuZRmf7@XxIqfPnwXKlGpVFApptz.oj\",\n      \"verified\": false,\n      \"primary\": false\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "e6d01437-daa6-4eeb-b276-c101e0770437",
+      "name": "Organizations",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "feb4515c-fe38-432a-9bff-60fe0430745d",
+          "name": "List organizations for a user",
+          "request": {
+            "name": "List organizations for a user",
+            "description": {},
+            "url": {
+              "path": [
+                "users",
+                ":user_id",
+                "organizations",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "user_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "875b9f75-ba4c-46ea-91a6-f486f19464e7",
+              "name": "Paginated list of organizations",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "users",
+                    ":user_id",
+                    "organizations",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "user_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"organizations\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"vertical\": \"string\",\n      \"image_id\": \"string\",\n      \"parent_id\": \"string\"\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"vertical\": \"string\",\n      \"image_id\": \"string\",\n      \"parent_id\": \"string\"\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 3852,\n    \"page_number\": 5588,\n    \"page_size\": 849,\n    \"page_count\": 5771,\n    \"has_more_items\": true,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "ef52e01b-cf1d-41f1-a330-3ec17134487d",
+      "name": "Events",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d3992ca2-53f6-4bc4-81fe-c574a16f0b7e",
+          "name": "List events for an organization",
+          "request": {
+            "name": "List events for an organization",
+            "description": {},
+            "url": {
+              "path": [
+                "organizations",
+                ":organization_id",
+                "events",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "page",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "organization_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "30990af1-2ee7-4f42-8587-a506a5e90a3e",
+              "name": "Events list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "organizations",
+                    ":organization_id",
+                    "events",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "page",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "organization_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"events\": [\n    {\n      \"id\": \"string\",\n      \"name\": {\n        \"text\": \"string\",\n        \"html\": \"string\"\n      },\n      \"description\": {\n        \"text\": \"string\",\n        \"html\": \"string\"\n      },\n      \"url\": \"https://BGyiKiBcjUSYXlRaGlqHzEf.eqqkKwWWrHKPyWcN8OLLuB3Y47VAj9tbK\",\n      \"start\": {\n        \"timezone\": \"string\",\n        \"local\": \"string\",\n        \"utc\": \"1976-07-06T20:43:01.624Z\"\n      },\n      \"end\": {\n        \"timezone\": \"string\",\n        \"local\": \"string\",\n        \"utc\": \"2002-05-20T13:22:22.423Z\"\n      },\n      \"currency\": \"string\",\n      \"status\": \"string\",\n      \"listed\": false,\n      \"shareable\": true,\n      \"online_event\": true,\n      \"capacity\": 4948,\n      \"category_id\": \"string\",\n      \"subcategory_id\": \"string\",\n      \"organization_id\": \"string\",\n      \"venue_id\": \"string\",\n      \"is_free\": false\n    },\n    {\n      \"id\": \"string\",\n      \"name\": {\n        \"text\": \"string\",\n        \"html\": \"string\"\n      },\n      \"description\": {\n        \"text\": \"string\",\n        \"html\": \"string\"\n      },\n      \"url\": \"http://GRXQFjfkSCRvA.cqDTv4sGdf+O.0E88hZ+NqtKFGwNvVgGB5V1JX1t3PCIcbYvj0It-CliZqHFAZaSi6KQ6c\",\n      \"start\": {\n        \"timezone\": \"string\",\n        \"local\": \"string\",\n        \"utc\": \"1952-05-05T16:55:17.345Z\"\n      },\n      \"end\": {\n        \"timezone\": \"string\",\n        \"local\": \"string\",\n        \"utc\": \"1980-03-11T18:06:53.510Z\"\n      },\n      \"currency\": \"string\",\n      \"status\": \"string\",\n      \"listed\": true,\n      \"shareable\": false,\n      \"online_event\": false,\n      \"capacity\": 1168,\n      \"category_id\": \"string\",\n      \"subcategory_id\": \"string\",\n      \"organization_id\": \"string\",\n      \"venue_id\": \"string\",\n      \"is_free\": true\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 3977,\n    \"page_number\": 4373,\n    \"page_size\": 2392,\n    \"page_count\": 6927,\n    \"has_more_items\": true,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6428e4a9-cc2d-4f79-9069-c83c60ff7855",
+          "name": "Get an event",
+          "request": {
+            "name": "Get an event",
+            "description": {
+              "content": "Confirmed by Eventbrite Python SDK README example get_event('my-event-id').",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "events",
+                ":event_id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "event_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6ae1119a-6def-4ebf-8f24-de6e95dfa54d",
+              "name": "Event",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "events",
+                    ":event_id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "event_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": {\n    \"text\": \"string\",\n    \"html\": \"string\"\n  },\n  \"description\": {\n    \"text\": \"string\",\n    \"html\": \"string\"\n  },\n  \"url\": \"http://ISsmqozTLHQHwyappEdJ.oqqkwMw+6L50ggn94ORt2x+.aeTeQpU+nThcV2clyAAbvu-xoVZEEDu\",\n  \"start\": {\n    \"timezone\": \"string\",\n    \"local\": \"string\",\n    \"utc\": \"2021-09-28T16:32:59.110Z\"\n  },\n  \"end\": {\n    \"timezone\": \"string\",\n    \"local\": \"string\",\n    \"utc\": \"1976-12-15T05:13:34.285Z\"\n  },\n  \"currency\": \"string\",\n  \"status\": \"string\",\n  \"listed\": true,\n  \"shareable\": false,\n  \"online_event\": true,\n  \"capacity\": 6649,\n  \"category_id\": \"string\",\n  \"subcategory_id\": \"string\",\n  \"organization_id\": \"string\",\n  \"venue_id\": \"string\",\n  \"is_free\": false\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b3647c7d-1bb6-4122-a494-fd7d3cfc6d92",
+          "name": "Update an event",
+          "request": {
+            "name": "Update an event",
+            "description": {},
+            "url": {
+              "path": [
+                "events",
+                ":event_id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "event_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"event\": {\n    \"id\": \"<string>\",\n    \"name\": {\n      \"text\": \"<string>\",\n      \"html\": \"<string>\"\n    },\n    \"description\": {\n      \"text\": \"<string>\",\n      \"html\": \"<string>\"\n    },\n    \"url\": \"<uri>\",\n    \"start\": {\n      \"timezone\": \"<string>\",\n      \"local\": \"<string>\",\n      \"utc\": \"<dateTime>\"\n    },\n    \"end\": {\n      \"timezone\": \"<string>\",\n      \"local\": \"<string>\",\n      \"utc\": \"<dateTime>\"\n    },\n    \"currency\": \"<string>\",\n    \"status\": \"<string>\",\n    \"listed\": \"<boolean>\",\n    \"shareable\": \"<boolean>\",\n    \"online_event\": \"<boolean>\",\n    \"capacity\": \"<integer>\",\n    \"category_id\": \"<string>\",\n    \"subcategory_id\": \"<string>\",\n    \"organization_id\": \"<string>\",\n    \"venue_id\": \"<string>\",\n    \"is_free\": \"<boolean>\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "609dc5da-a89d-4bb7-a42d-af9610b9cffa",
+              "name": "Updated event",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "events",
+                    ":event_id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "event_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"event\": {\n    \"id\": \"string\",\n    \"name\": {\n      \"text\": \"string\",\n      \"html\": \"string\"\n    },\n    \"description\": {\n      \"text\": \"string\",\n      \"html\": \"string\"\n    },\n    \"url\": \"https://aBneZBEQVtBQZZvCzilctI.hjyCbuzsdxRSjWPWRG9RELq7FS48wEv\",\n    \"start\": {\n      \"timezone\": \"string\",\n      \"local\": \"string\",\n      \"utc\": \"1953-09-29T13:55:38.981Z\"\n    },\n    \"end\": {\n      \"timezone\": \"string\",\n      \"local\": \"string\",\n      \"utc\": \"1997-12-07T17:25:52.656Z\"\n    },\n    \"currency\": \"string\",\n    \"status\": \"string\",\n    \"listed\": true,\n    \"shareable\": true,\n    \"online_event\": false,\n    \"capacity\": 482,\n    \"category_id\": \"string\",\n    \"subcategory_id\": \"string\",\n    \"organization_id\": \"string\",\n    \"venue_id\": \"string\",\n    \"is_free\": true\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": {\n    \"text\": \"string\",\n    \"html\": \"string\"\n  },\n  \"description\": {\n    \"text\": \"string\",\n    \"html\": \"string\"\n  },\n  \"url\": \"http://ISsmqozTLHQHwyappEdJ.oqqkwMw+6L50ggn94ORt2x+.aeTeQpU+nThcV2clyAAbvu-xoVZEEDu\",\n  \"start\": {\n    \"timezone\": \"string\",\n    \"local\": \"string\",\n    \"utc\": \"2021-09-28T16:32:59.110Z\"\n  },\n  \"end\": {\n    \"timezone\": \"string\",\n    \"local\": \"string\",\n    \"utc\": \"1976-12-15T05:13:34.285Z\"\n  },\n  \"currency\": \"string\",\n  \"status\": \"string\",\n  \"listed\": true,\n  \"shareable\": false,\n  \"online_event\": true,\n  \"capacity\": 6649,\n  \"category_id\": \"string\",\n  \"subcategory_id\": \"string\",\n  \"organization_id\": \"string\",\n  \"venue_id\": \"string\",\n  \"is_free\": false\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "a17b8875-e98e-4f34-b79d-6bb08c94eeee",
+      "name": "Ticket Classes",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "5d062740-f68a-4a88-8738-b5e639e1e6d8",
+          "name": "List ticket classes for an event",
+          "request": {
+            "name": "List ticket classes for an event",
+            "description": {
+              "content": "Confirmed by SDK README: ticket_classes accessible via the expansions parameter on events.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "events",
+                ":event_id",
+                "ticket_classes",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "event_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "68ba7909-756b-4b13-a35e-61db81a6416a",
+              "name": "Ticket classes",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "events",
+                    ":event_id",
+                    "ticket_classes",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "event_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ticket_classes\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"cost\": {\n        \"currency\": \"string\",\n        \"value\": 1212,\n        \"major_value\": \"string\",\n        \"display\": \"string\"\n      },\n      \"fee\": {\n        \"currency\": \"string\",\n        \"value\": 1470,\n        \"major_value\": \"string\",\n        \"display\": \"string\"\n      },\n      \"free\": true,\n      \"donation\": false,\n      \"minimum_quantity\": 3483,\n      \"maximum_quantity\": 1053,\n      \"quantity_total\": 8297,\n      \"quantity_sold\": 1828,\n      \"sales_start\": \"2019-09-20T18:36:40.786Z\",\n      \"sales_end\": \"1962-12-31T18:41:18.840Z\",\n      \"hidden\": true\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"cost\": {\n        \"currency\": \"string\",\n        \"value\": 4558,\n        \"major_value\": \"string\",\n        \"display\": \"string\"\n      },\n      \"fee\": {\n        \"currency\": \"string\",\n        \"value\": 1402,\n        \"major_value\": \"string\",\n        \"display\": \"string\"\n      },\n      \"free\": false,\n      \"donation\": false,\n      \"minimum_quantity\": 7821,\n      \"maximum_quantity\": 8412,\n      \"quantity_total\": 2717,\n      \"quantity_sold\": 6156,\n      \"sales_start\": \"1967-03-20T20:28:58.977Z\",\n      \"sales_end\": \"1959-11-29T09:55:33.468Z\",\n      \"hidden\": true\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 2934,\n    \"page_number\": 2217,\n    \"page_size\": 3020,\n    \"page_count\": 7407,\n    \"has_more_items\": false,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8f4d082c-573b-48ad-ab8a-74fa05a0acc6",
+          "name": "Create a ticket class",
+          "request": {
+            "name": "Create a ticket class",
+            "description": {},
+            "url": {
+              "path": [
+                "events",
+                ":event_id",
+                "ticket_classes",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "event_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ticket_class\": {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"description\": \"<string>\",\n    \"cost\": {\n      \"currency\": \"<string>\",\n      \"value\": \"<integer>\",\n      \"major_value\": \"<string>\",\n      \"display\": \"<string>\"\n    },\n    \"fee\": {\n      \"currency\": \"<string>\",\n      \"value\": \"<integer>\",\n      \"major_value\": \"<string>\",\n      \"display\": \"<string>\"\n    },\n    \"free\": \"<boolean>\",\n    \"donation\": \"<boolean>\",\n    \"minimum_quantity\": \"<integer>\",\n    \"maximum_quantity\": \"<integer>\",\n    \"quantity_total\": \"<integer>\",\n    \"quantity_sold\": \"<integer>\",\n    \"sales_start\": \"<dateTime>\",\n    \"sales_end\": \"<dateTime>\",\n    \"hidden\": \"<boolean>\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "a81bf542-4082-46f0-bb51-2d7b7b31f9c0",
+              "name": "Created ticket class",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "events",
+                    ":event_id",
+                    "ticket_classes",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "event_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ticket_class\": {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"description\": \"string\",\n    \"cost\": {\n      \"currency\": \"string\",\n      \"value\": 988,\n      \"major_value\": \"string\",\n      \"display\": \"string\"\n    },\n    \"fee\": {\n      \"currency\": \"string\",\n      \"value\": 7954,\n      \"major_value\": \"string\",\n      \"display\": \"string\"\n    },\n    \"free\": false,\n    \"donation\": false,\n    \"minimum_quantity\": 2500,\n    \"maximum_quantity\": 703,\n    \"quantity_total\": 1773,\n    \"quantity_sold\": 8951,\n    \"sales_start\": \"1962-02-20T09:41:54.850Z\",\n    \"sales_end\": \"2013-06-22T19:23:42.657Z\",\n    \"hidden\": true\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"cost\": {\n    \"currency\": \"string\",\n    \"value\": 5449,\n    \"major_value\": \"string\",\n    \"display\": \"string\"\n  },\n  \"fee\": {\n    \"currency\": \"string\",\n    \"value\": 4047,\n    \"major_value\": \"string\",\n    \"display\": \"string\"\n  },\n  \"free\": true,\n  \"donation\": false,\n  \"minimum_quantity\": 8418,\n  \"maximum_quantity\": 3374,\n  \"quantity_total\": 8157,\n  \"quantity_sold\": 7321,\n  \"sales_start\": \"1961-09-06T17:05:43.041Z\",\n  \"sales_end\": \"2024-04-21T04:10:13.689Z\",\n  \"hidden\": false\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "53291dbf-44ea-4ee4-8fb2-d8471f376334",
+      "name": "Attendees",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "91fff2a1-acef-4dde-8896-9dccf0db49b7",
+          "name": "List attendees for an event",
+          "request": {
+            "name": "List attendees for an event",
+            "description": {},
+            "url": {
+              "path": [
+                "events",
+                ":event_id",
+                "attendees",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "changed_since",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "page",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "event_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1cb006ab-d22d-410b-b739-bcd54762aef2",
+              "name": "Attendees list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "events",
+                    ":event_id",
+                    "attendees",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "changed_since",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "key": "page",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "event_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"attendees\": [\n    {\n      \"id\": \"string\",\n      \"event_id\": \"string\",\n      \"order_id\": \"string\",\n      \"ticket_class_id\": \"string\",\n      \"ticket_class_name\": \"string\",\n      \"checked_in\": true,\n      \"cancelled\": false,\n      \"refunded\": true,\n      \"status\": \"string\",\n      \"created\": \"1967-06-13T09:47:46.697Z\",\n      \"changed\": \"2001-08-22T16:00:10.422Z\",\n      \"profile\": {\n        \"name\": \"string\",\n        \"email\": \"QwuGDy7uvr@QkpVLGKuCagbvKwsHHT.vvhz\",\n        \"first_name\": \"string\",\n        \"last_name\": \"string\"\n      }\n    },\n    {\n      \"id\": \"string\",\n      \"event_id\": \"string\",\n      \"order_id\": \"string\",\n      \"ticket_class_id\": \"string\",\n      \"ticket_class_name\": \"string\",\n      \"checked_in\": true,\n      \"cancelled\": false,\n      \"refunded\": false,\n      \"status\": \"string\",\n      \"created\": \"1972-12-11T13:05:54.170Z\",\n      \"changed\": \"1954-08-29T21:26:27.973Z\",\n      \"profile\": {\n        \"name\": \"string\",\n        \"email\": \"QrulUBK0Qkz@qfhCFnaig.dq\",\n        \"first_name\": \"string\",\n        \"last_name\": \"string\"\n      }\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 652,\n    \"page_number\": 6594,\n    \"page_size\": 8023,\n    \"page_count\": 4751,\n    \"has_more_items\": true,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "488daf88-5889-45b5-b14d-79c4ae60dd8c",
+      "name": "Orders",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "330a4d50-8827-4d53-82b3-c08b6ee1a233",
+          "name": "List orders for an event",
+          "request": {
+            "name": "List orders for an event",
+            "description": {},
+            "url": {
+              "path": [
+                "events",
+                ":event_id",
+                "orders",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "page",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "event_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b287f906-0e52-4e41-a423-5a673a673489",
+              "name": "Orders list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "events",
+                    ":event_id",
+                    "orders",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "page",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "event_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"orders\": [\n    {\n      \"id\": \"string\",\n      \"event_id\": \"string\",\n      \"status\": \"string\",\n      \"created\": \"2000-03-21T05:39:32.668Z\",\n      \"changed\": \"1983-01-06T22:51:57.993Z\",\n      \"name\": \"string\",\n      \"first_name\": \"string\",\n      \"last_name\": \"string\",\n      \"email\": \"B7pyz2ew6Bjbq@KmbytxdnhkWVPDztoVOfyWey.hy\",\n      \"costs\": {\n        \"base_price\": {\n          \"currency\": \"string\",\n          \"value\": 3553,\n          \"major_value\": \"string\",\n          \"display\": \"string\"\n        },\n        \"eventbrite_fee\": {\n          \"currency\": \"string\",\n          \"value\": 9550,\n          \"major_value\": \"string\",\n          \"display\": \"string\"\n        },\n        \"gross\": {\n          \"currency\": \"string\",\n          \"value\": 2232,\n          \"major_value\": \"string\",\n          \"display\": \"string\"\n        },\n        \"payment_fee\": {\n          \"currency\": \"string\",\n          \"value\": 6013,\n          \"major_value\": \"string\",\n          \"display\": \"string\"\n        },\n        \"tax\": {\n          \"currency\": \"string\",\n          \"value\": 5714,\n          \"major_value\": \"string\",\n          \"display\": \"string\"\n        }\n      }\n    },\n    {\n      \"id\": \"string\",\n      \"event_id\": \"string\",\n      \"status\": \"string\",\n      \"created\": \"1987-09-19T23:33:52.447Z\",\n      \"changed\": \"1948-11-25T15:22:55.952Z\",\n      \"name\": \"string\",\n      \"first_name\": \"string\",\n      \"last_name\": \"string\",\n      \"email\": \"Jzfn1Se0@AN.fucw\",\n      \"costs\": {\n        \"base_price\": {\n          \"currency\": \"string\",\n          \"value\": 5390,\n          \"major_value\": \"string\",\n          \"display\": \"string\"\n        },\n        \"eventbrite_fee\": {\n          \"currency\": \"string\",\n          \"value\": 876,\n          \"major_value\": \"string\",\n          \"display\": \"string\"\n        },\n        \"gross\": {\n          \"currency\": \"string\",\n          \"value\": 6302,\n          \"major_value\": \"string\",\n          \"display\": \"string\"\n        },\n        \"payment_fee\": {\n          \"currency\": \"string\",\n          \"value\": 6332,\n          \"major_value\": \"string\",\n          \"display\": \"string\"\n        },\n        \"tax\": {\n          \"currency\": \"string\",\n          \"value\": 5467,\n          \"major_value\": \"string\",\n          \"display\": \"string\"\n        }\n      }\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 1392,\n    \"page_number\": 3834,\n    \"page_size\": 4289,\n    \"page_count\": 8198,\n    \"has_more_items\": true,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "81a4c386-8cbf-4ab5-b32c-86f9c802b1ea",
+          "name": "Get an order",
+          "request": {
+            "name": "Get an order",
+            "description": {},
+            "url": {
+              "path": [
+                "orders",
+                ":order_id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "order_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ddc37140-a803-4b5e-a811-a9c4ef13c206",
+              "name": "Order",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "orders",
+                    ":order_id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "order_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"event_id\": \"string\",\n  \"status\": \"string\",\n  \"created\": \"2006-05-10T11:07:50.286Z\",\n  \"changed\": \"1982-06-20T06:22:29.716Z\",\n  \"name\": \"string\",\n  \"first_name\": \"string\",\n  \"last_name\": \"string\",\n  \"email\": \"WBxrEK1tt@dHbqhtCAPVGjsrf.ea\",\n  \"costs\": {\n    \"base_price\": {\n      \"currency\": \"string\",\n      \"value\": 5051,\n      \"major_value\": \"string\",\n      \"display\": \"string\"\n    },\n    \"eventbrite_fee\": {\n      \"currency\": \"string\",\n      \"value\": 334,\n      \"major_value\": \"string\",\n      \"display\": \"string\"\n    },\n    \"gross\": {\n      \"currency\": \"string\",\n      \"value\": 5034,\n      \"major_value\": \"string\",\n      \"display\": \"string\"\n    },\n    \"payment_fee\": {\n      \"currency\": \"string\",\n      \"value\": 3324,\n      \"major_value\": \"string\",\n      \"display\": \"string\"\n    },\n    \"tax\": {\n      \"currency\": \"string\",\n      \"value\": 6489,\n      \"major_value\": \"string\",\n      \"display\": \"string\"\n    }\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "e9c9a2a0-10d5-4a0b-b838-a3e5dc7db2ec",
+      "name": "Venues",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "cf0b366e-4029-45d8-9e1d-93920c9eb838",
+          "name": "Get a venue",
+          "request": {
+            "name": "Get a venue",
+            "description": {},
+            "url": {
+              "path": [
+                "venues",
+                ":venue_id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "venue_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "257df20e-cc2a-4174-8aa1-f898bfb5848b",
+              "name": "Venue",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "venues",
+                    ":venue_id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "venue_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"capacity\": 7362,\n  \"age_restriction\": \"string\",\n  \"latitude\": \"string\",\n  \"longitude\": \"string\",\n  \"address\": {\n    \"address_1\": \"string\",\n    \"address_2\": \"string\",\n    \"city\": \"string\",\n    \"region\": \"string\",\n    \"postal_code\": \"string\",\n    \"country\": \"string\",\n    \"latitude\": \"string\",\n    \"longitude\": \"string\",\n    \"localized_address_display\": \"string\",\n    \"localized_area_display\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "14a19333-cb35-4cca-b812-c09383a2d626",
+          "name": "List venues for an organization",
+          "request": {
+            "name": "List venues for an organization",
+            "description": {},
+            "url": {
+              "path": [
+                "organizations",
+                ":organization_id",
+                "venues",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "organization_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a22504ad-e733-4427-8c0b-279b3a77968a",
+              "name": "Venues list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "organizations",
+                    ":organization_id",
+                    "venues",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "organization_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"venues\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"capacity\": 792,\n      \"age_restriction\": \"string\",\n      \"latitude\": \"string\",\n      \"longitude\": \"string\",\n      \"address\": {\n        \"address_1\": \"string\",\n        \"address_2\": \"string\",\n        \"city\": \"string\",\n        \"region\": \"string\",\n        \"postal_code\": \"string\",\n        \"country\": \"string\",\n        \"latitude\": \"string\",\n        \"longitude\": \"string\",\n        \"localized_address_display\": \"string\",\n        \"localized_area_display\": \"string\"\n      }\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"capacity\": 6937,\n      \"age_restriction\": \"string\",\n      \"latitude\": \"string\",\n      \"longitude\": \"string\",\n      \"address\": {\n        \"address_1\": \"string\",\n        \"address_2\": \"string\",\n        \"city\": \"string\",\n        \"region\": \"string\",\n        \"postal_code\": \"string\",\n        \"country\": \"string\",\n        \"latitude\": \"string\",\n        \"longitude\": \"string\",\n        \"localized_address_display\": \"string\",\n        \"localized_area_display\": \"string\"\n      }\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 5824,\n    \"page_number\": 8033,\n    \"page_size\": 5227,\n    \"page_count\": 7873,\n    \"has_more_items\": false,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7a080bd5-6aa4-4c63-b630-b676c209b88a",
+          "name": "Create a venue under an organization",
+          "request": {
+            "name": "Create a venue under an organization",
+            "description": {},
+            "url": {
+              "path": [
+                "organizations",
+                ":organization_id",
+                "venues",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "organization_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"venue\": {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"capacity\": \"<integer>\",\n    \"age_restriction\": \"<string>\",\n    \"latitude\": \"<string>\",\n    \"longitude\": \"<string>\",\n    \"address\": {\n      \"address_1\": \"<string>\",\n      \"address_2\": \"<string>\",\n      \"city\": \"<string>\",\n      \"region\": \"<string>\",\n      \"postal_code\": \"<string>\",\n      \"country\": \"<string>\",\n      \"latitude\": \"<string>\",\n      \"longitude\": \"<string>\",\n      \"localized_address_display\": \"<string>\",\n      \"localized_area_display\": \"<string>\"\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "60981f26-0921-4e04-a78e-fc29cbf5d674",
+              "name": "Created venue",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "organizations",
+                    ":organization_id",
+                    "venues",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "organization_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"venue\": {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"capacity\": 6595,\n    \"age_restriction\": \"string\",\n    \"latitude\": \"string\",\n    \"longitude\": \"string\",\n    \"address\": {\n      \"address_1\": \"string\",\n      \"address_2\": \"string\",\n      \"city\": \"string\",\n      \"region\": \"string\",\n      \"postal_code\": \"string\",\n      \"country\": \"string\",\n      \"latitude\": \"string\",\n      \"longitude\": \"string\",\n      \"localized_address_display\": \"string\",\n      \"localized_area_display\": \"string\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"capacity\": 7362,\n  \"age_restriction\": \"string\",\n  \"latitude\": \"string\",\n  \"longitude\": \"string\",\n  \"address\": {\n    \"address_1\": \"string\",\n    \"address_2\": \"string\",\n    \"city\": \"string\",\n    \"region\": \"string\",\n    \"postal_code\": \"string\",\n    \"country\": \"string\",\n    \"latitude\": \"string\",\n    \"longitude\": \"string\",\n    \"localized_address_display\": \"string\",\n    \"localized_area_display\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "46458343-f268-4373-8c53-c7fed26f798c",
+      "name": "Categories",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "ae081b33-85cc-43b3-9c5d-670c0a606c6f",
+          "name": "List event categories",
+          "request": {
+            "name": "List event categories",
+            "description": {},
+            "url": {
+              "path": [
+                "categories",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a5c7a4ef-362f-4ab7-9a1f-30bfce1c8b36",
+              "name": "Categories list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "categories",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"categories\": [\n    {\n      \"id\": \"string\",\n      \"resource_uri\": \"https://muoGGevBLasLZjkFzCBBufIPwRq.gmWJkW-90wzCNgymWc9L0nTudCbiYf6axAs0NdkAQ+q3qVwXSZGL\",\n      \"name\": \"string\",\n      \"name_localized\": \"string\",\n      \"short_name\": \"string\",\n      \"short_name_localized\": \"string\"\n    },\n    {\n      \"id\": \"string\",\n      \"resource_uri\": \"http://maUDwXwlylqibvwIUXvuDabHHYVteR.iacfTuWPnZrY93vAHvm6mcmnzt\",\n      \"name\": \"string\",\n      \"name_localized\": \"string\",\n      \"short_name\": \"string\",\n      \"short_name_localized\": \"string\"\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 9152,\n    \"page_number\": 1958,\n    \"page_size\": 5922,\n    \"page_count\": 1461,\n    \"has_more_items\": false,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.eventbriteapi.com/v3",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "39f059d2-b485-4ded-a489-9b7e92779beb",
+    "name": "Eventbrite Platform API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).\n\nContact Support:\n Name: API Evangelist\n Email: kin@apievangelist.com",
+      "type": "text/plain"
+    }
+  }
+}
