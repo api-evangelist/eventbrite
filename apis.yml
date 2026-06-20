@@ -2,7 +2,7 @@ aid: eventbrite
 url: https://raw.githubusercontent.com/api-evangelist/eventbrite/refs/heads/main/apis.yml
 name: Eventbrite
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Events
   - Event Technology
@@ -23,7 +23,7 @@ apis:
       - Ticket Classes
       - Venues
       - Categories
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.eventbrite.com/platform/api
     baseURL: https://www.eventbriteapi.com/v3
     description: >-
@@ -50,7 +50,7 @@ apis:
       - Orders
       - Notifications
       - Automation
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.eventbrite.com/platform/api#/reference/webhook
     baseURL: https://www.eventbriteapi.com/v3
     description: >-
@@ -69,7 +69,7 @@ apis:
       - SDK
       - Python
       - Client Library
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://github.com/eventbrite/eventbrite-sdk-python
     baseURL: https://www.eventbriteapi.com/v3
     description: >-
