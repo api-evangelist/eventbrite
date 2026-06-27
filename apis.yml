@@ -80,7 +80,7 @@ apis:
     properties:
       - type: SourceCode
         url: https://github.com/eventbrite/eventbrite-sdk-python
-      - type: SDK
+      - type: SDKs
         url: https://pypi.org/project/eventbrite/
 common:
   - type: LinkedIn
