@@ -83,6 +83,14 @@ apis:
       - type: SDKs
         url: https://pypi.org/project/eventbrite/
 common:
+  - type: TrustCenter
+    url: security/eventbrite-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/eventbrite-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/eventbrite-domain-security.yml
+  - type: Authentication
+    url: authentication/eventbrite-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/eventbrite
   - type: Website

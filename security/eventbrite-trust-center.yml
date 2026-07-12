@@ -1,0 +1,15 @@
+generated: '2026-07-11'
+method: searched
+probe: true
+source: https://www.eventbrite.com/security/
+url: https://www.eventbrite.com/security/
+certifications:
+- SOC 2
+- ISO 27001
+- PCI DSS
+evidence:
+- source: https://www.eventbrite.com/security/
+  keywords:
+  - soc2
+  - iso 27001
+  - pci-dss
