@@ -83,6 +83,8 @@ apis:
       - type: SDKs
         url: https://pypi.org/project/eventbrite/
 common:
+  - type: AgenticAccess
+    url: agentic-access/eventbrite-agentic-access.yml
   - type: TrustCenter
     url: security/eventbrite-trust-center.yml
   - type: VulnerabilityDisclosure
