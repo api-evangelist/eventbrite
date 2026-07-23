@@ -1,0 +1,62 @@
+openapi: 3.1.0
+info:
+  title: Eventbrite Platform Attendees Users API
+  description: Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).
+  version: 3.0.0
+  contact:
+    name: API Evangelist
+    email: kin@apievangelist.com
+  license:
+    name: Proprietary
+servers:
+- url: https://www.eventbriteapi.com/v3
+  description: Eventbrite v3 production API
+security:
+- bearerAuth: []
+tags:
+- name: Users
+paths:
+  /users/me/:
+    get:
+      summary: Get the current user
+      description: 'Returns the authenticated user. Confirmed by the Eventbrite Python SDK README: "Not passing an argument returns yourself."'
+      operationId: getCurrentUser
+      tags:
+      - Users
+      responses:
+        '200':
+          description: Current user
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        emails:
+          type: array
+          items:
+            type: object
+            properties:
+              email:
+                type: string
+                format: email
+              verified:
+                type: boolean
+              primary:
+                type: boolean
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.0 token (private token or OAuth-issued)

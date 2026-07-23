@@ -1,0 +1,76 @@
+openapi: 3.1.0
+info:
+  title: Eventbrite Platform Attendees Categories API
+  description: Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).
+  version: 3.0.0
+  contact:
+    name: API Evangelist
+    email: kin@apievangelist.com
+  license:
+    name: Proprietary
+servers:
+- url: https://www.eventbriteapi.com/v3
+  description: Eventbrite v3 production API
+security:
+- bearerAuth: []
+tags:
+- name: Categories
+paths:
+  /categories/:
+    get:
+      summary: List event categories
+      operationId: listCategories
+      tags:
+      - Categories
+      responses:
+        '200':
+          description: Categories list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  categories:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Category'
+                  pagination:
+                    $ref: '#/components/schemas/Pagination'
+components:
+  schemas:
+    Category:
+      type: object
+      properties:
+        id:
+          type: string
+        resource_uri:
+          type: string
+          format: uri
+        name:
+          type: string
+        name_localized:
+          type: string
+        short_name:
+          type: string
+        short_name_localized:
+          type: string
+    Pagination:
+      type: object
+      properties:
+        object_count:
+          type: integer
+        page_number:
+          type: integer
+        page_size:
+          type: integer
+        page_count:
+          type: integer
+        has_more_items:
+          type: boolean
+        continuation:
+          type: string
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.0 token (private token or OAuth-issued)

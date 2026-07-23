@@ -1,0 +1,144 @@
+openapi: 3.1.0
+info:
+  title: Eventbrite Platform Attendees Venues API
+  description: Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).
+  version: 3.0.0
+  contact:
+    name: API Evangelist
+    email: kin@apievangelist.com
+  license:
+    name: Proprietary
+servers:
+- url: https://www.eventbriteapi.com/v3
+  description: Eventbrite v3 production API
+security:
+- bearerAuth: []
+tags:
+- name: Venues
+paths:
+  /venues/{venue_id}/:
+    parameters:
+    - name: venue_id
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Get a venue
+      operationId: getVenue
+      tags:
+      - Venues
+      responses:
+        '200':
+          description: Venue
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Venue'
+  /organizations/{organization_id}/venues/:
+    parameters:
+    - name: organization_id
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      summary: List venues for an organization
+      operationId: listOrganizationVenues
+      tags:
+      - Venues
+      responses:
+        '200':
+          description: Venues list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  venues:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Venue'
+                  pagination:
+                    $ref: '#/components/schemas/Pagination'
+    post:
+      summary: Create a venue under an organization
+      operationId: createOrganizationVenue
+      tags:
+      - Venues
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                venue:
+                  $ref: '#/components/schemas/Venue'
+      responses:
+        '200':
+          description: Created venue
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Venue'
+components:
+  schemas:
+    Pagination:
+      type: object
+      properties:
+        object_count:
+          type: integer
+        page_number:
+          type: integer
+        page_size:
+          type: integer
+        page_count:
+          type: integer
+        has_more_items:
+          type: boolean
+        continuation:
+          type: string
+    Venue:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        capacity:
+          type: integer
+        age_restriction:
+          type: string
+        latitude:
+          type: string
+        longitude:
+          type: string
+        address:
+          type: object
+          properties:
+            address_1:
+              type: string
+            address_2:
+              type: string
+            city:
+              type: string
+            region:
+              type: string
+            postal_code:
+              type: string
+            country:
+              type: string
+            latitude:
+              type: string
+            longitude:
+              type: string
+            localized_address_display:
+              type: string
+            localized_area_display:
+              type: string
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.0 token (private token or OAuth-issued)

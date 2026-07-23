@@ -1,0 +1,176 @@
+openapi: 3.1.0
+info:
+  title: Eventbrite Platform Attendees Events API
+  description: Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).
+  version: 3.0.0
+  contact:
+    name: API Evangelist
+    email: kin@apievangelist.com
+  license:
+    name: Proprietary
+servers:
+- url: https://www.eventbriteapi.com/v3
+  description: Eventbrite v3 production API
+security:
+- bearerAuth: []
+tags:
+- name: Events
+paths:
+  /organizations/{organization_id}/events/:
+    parameters:
+    - name: organization_id
+      in: path
+      required: true
+      schema:
+        type: string
+    - name: status
+      in: query
+      schema:
+        type: string
+    - name: page
+      in: query
+      schema:
+        type: integer
+    get:
+      summary: List events for an organization
+      operationId: listOrganizationEvents
+      tags:
+      - Events
+      responses:
+        '200':
+          description: Events list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  events:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Event'
+                  pagination:
+                    $ref: '#/components/schemas/Pagination'
+  /events/{event_id}/:
+    parameters:
+    - name: event_id
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      summary: Get an event
+      description: Confirmed by Eventbrite Python SDK README example get_event('my-event-id').
+      operationId: getEvent
+      tags:
+      - Events
+      responses:
+        '200':
+          description: Event
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Event'
+    post:
+      summary: Update an event
+      operationId: updateEvent
+      tags:
+      - Events
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                event:
+                  $ref: '#/components/schemas/Event'
+      responses:
+        '200':
+          description: Updated event
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Event'
+components:
+  schemas:
+    MultipartText:
+      type: object
+      properties:
+        text:
+          type: string
+        html:
+          type: string
+    Pagination:
+      type: object
+      properties:
+        object_count:
+          type: integer
+        page_number:
+          type: integer
+        page_size:
+          type: integer
+        page_count:
+          type: integer
+        has_more_items:
+          type: boolean
+        continuation:
+          type: string
+    Event:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          $ref: '#/components/schemas/MultipartText'
+        description:
+          $ref: '#/components/schemas/MultipartText'
+        url:
+          type: string
+          format: uri
+        start:
+          type: object
+          properties:
+            timezone:
+              type: string
+            local:
+              type: string
+            utc:
+              type: string
+              format: date-time
+        end:
+          type: object
+          properties:
+            timezone:
+              type: string
+            local:
+              type: string
+            utc:
+              type: string
+              format: date-time
+        currency:
+          type: string
+        status:
+          type: string
+        listed:
+          type: boolean
+        shareable:
+          type: boolean
+        online_event:
+          type: boolean
+        capacity:
+          type: integer
+        category_id:
+          type: string
+        subcategory_id:
+          type: string
+        organization_id:
+          type: string
+        venue_id:
+          type: string
+        is_free:
+          type: boolean
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.0 token (private token or OAuth-issued)
