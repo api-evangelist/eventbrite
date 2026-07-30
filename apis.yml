@@ -2,7 +2,19 @@ aid: eventbrite
 url: https://raw.githubusercontent.com/api-evangelist/eventbrite/refs/heads/main/apis.yml
 name: Eventbrite
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/eventbrite.png
 tags:
   - Events
   - Event Technology
@@ -13,75 +25,150 @@ created: '2026-05-05'
 modified: '2026-05-16'
 specificationVersion: '0.19'
 apis:
-  - aid: eventbrite:platform-api
-    name: Eventbrite Platform API
-    tags:
-      - Events
-      - Attendees
-      - Orders
-      - Organizations
-      - Ticket Classes
-      - Venues
-      - Categories
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://www.eventbrite.com/platform/api
-    baseURL: https://www.eventbriteapi.com/v3
-    description: >-
-      The Eventbrite Platform API is a REST API that lets developers manage
-      events, attendees, orders, organizations, ticket classes, venues,
-      categories, and event series on Eventbrite. The API uses OAuth 2.0 with
-      bearer tokens (private and OAuth-issued tokens); resources are accessed
-      under the v3 base path at https://www.eventbriteapi.com/v3 and return JSON
-      payloads. Typical use cases include syncing event inventory into external
-      sites, fulfilling tickets and check-in flows, embedding event creation
-      into partner platforms, and reporting on attendee and sales data.
-    properties:
-      - type: Documentation
-        url: https://www.eventbrite.com/platform/api
-      - type: SignupURL
-        url: https://www.eventbrite.com/platform/api-keys
-      - type: Authentication
-        url: https://www.eventbrite.com/platform/api#/introduction/authentication
-  - aid: eventbrite:webhooks
-    name: Eventbrite Webhooks
-    tags:
-      - Webhooks
-      - Events
-      - Orders
-      - Notifications
-      - Automation
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://www.eventbrite.com/platform/api#/reference/webhook
-    baseURL: https://www.eventbriteapi.com/v3
-    description: >-
-      Eventbrite Webhooks deliver HTTP POST notifications to subscriber URLs
-      when events such as event publish/unpublish, order placement and updates,
-      attendee changes, refunds, and check-ins occur on Eventbrite. Developers
-      register webhook endpoints against an organization via the Platform API
-      and use the resulting payloads to drive real-time integrations without
-      polling the REST API.
-    properties:
-      - type: Documentation
-        url: https://www.eventbrite.com/platform/api#/reference/webhook
-  - aid: eventbrite:python-sdk
-    name: Eventbrite Python SDK
-    tags:
-      - SDK
-      - Python
-      - Client Library
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://github.com/eventbrite/eventbrite-sdk-python
-    baseURL: https://www.eventbriteapi.com/v3
-    description: >-
-      The Eventbrite Python SDK is an open-source client library maintained by
-      Eventbrite that provides idiomatic Python access to the Eventbrite
-      Platform API for managing events, orders, attendees, and related
-      resources.
-    properties:
-      - type: SourceCode
-        url: https://github.com/eventbrite/eventbrite-sdk-python
-      - type: SDKs
-        url: https://pypi.org/project/eventbrite/
+- aid: eventbrite:platform-api
+  name: Eventbrite Platform API
+  tags:
+  - Events
+  - Attendees
+  - Orders
+  - Organizations
+  - Ticket Classes
+  - Venues
+  - Categories
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.eventbrite.com/platform/api
+  baseURL: https://www.eventbriteapi.com/v3
+  description: >-
+    The Eventbrite Platform API is a REST API that lets developers manage events, attendees, orders, organizations,
+    ticket classes, venues, categories, and event series on Eventbrite. The API uses OAuth 2.0 with bearer
+    tokens (private and OAuth-issued tokens); resources are accessed under the v3 base path at https://www.eventbriteapi.com/v3
+    and return JSON payloads. Typical use cases include syncing event inventory into external sites, fulfilling
+    tickets and check-in flows, embedding event creation into partner platforms, and reporting on attendee
+    and sales data.
+  properties:
+  - type: Documentation
+    url: https://www.eventbrite.com/platform/api
+  - type: SignupURL
+    url: https://www.eventbrite.com/platform/api-keys
+  - type: Authentication
+    url: https://www.eventbrite.com/platform/api#/introduction/authentication
+- aid: eventbrite:webhooks
+  name: Eventbrite Webhooks
+  tags:
+  - Webhooks
+  - Events
+  - Orders
+  - Notifications
+  - Automation
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.eventbrite.com/platform/api#/reference/webhook
+  baseURL: https://www.eventbriteapi.com/v3
+  description: >-
+    Eventbrite Webhooks deliver HTTP POST notifications to subscriber URLs when events such as event publish/unpublish,
+    order placement and updates, attendee changes, refunds, and check-ins occur on Eventbrite. Developers
+    register webhook endpoints against an organization via the Platform API and use the resulting payloads
+    to drive real-time integrations without polling the REST API.
+  properties:
+  - type: Documentation
+    url: https://www.eventbrite.com/platform/api#/reference/webhook
+- aid: eventbrite:python-sdk
+  name: Eventbrite Python SDK
+  tags:
+  - SDK
+  - Python
+  - Client Library
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://github.com/eventbrite/eventbrite-sdk-python
+  baseURL: https://www.eventbriteapi.com/v3
+  description: >-
+    The Eventbrite Python SDK is an open-source client library maintained by Eventbrite that provides
+    idiomatic Python access to the Eventbrite Platform API for managing events, orders, attendees, and
+    related resources.
+  properties:
+  - type: SourceCode
+    url: https://github.com/eventbrite/eventbrite-sdk-python
+  - type: SDKs
+    url: https://pypi.org/project/eventbrite/
+- aid: eventbrite:eventbrite-attendees-api
+  name: Eventbrite Attendees API
+  description: The Attendees API from Eventbrite — 1 operation(s) for attendees.
+  humanURL: https://www.eventbrite.com/platform/api
+  baseURL: https://www.eventbriteapi.com/v3
+  tags:
+  - Attendees
+  properties:
+  - type: OpenAPI
+    url: openapi/eventbrite-attendees-api-openapi.yml
+- aid: eventbrite:eventbrite-categories-api
+  name: Eventbrite Categories API
+  description: The Categories API from Eventbrite — 1 operation(s) for categories.
+  humanURL: https://www.eventbrite.com/platform/api
+  baseURL: https://www.eventbriteapi.com/v3
+  tags:
+  - Categories
+  properties:
+  - type: OpenAPI
+    url: openapi/eventbrite-categories-api-openapi.yml
+- aid: eventbrite:eventbrite-events-api
+  name: Eventbrite Events API
+  description: The Events API from Eventbrite — 2 operation(s) for events.
+  humanURL: https://www.eventbrite.com/platform/api
+  baseURL: https://www.eventbriteapi.com/v3
+  tags:
+  - Events
+  properties:
+  - type: OpenAPI
+    url: openapi/eventbrite-events-api-openapi.yml
+- aid: eventbrite:eventbrite-orders-api
+  name: Eventbrite Orders API
+  description: The Orders API from Eventbrite — 2 operation(s) for orders.
+  humanURL: https://www.eventbrite.com/platform/api
+  baseURL: https://www.eventbriteapi.com/v3
+  tags:
+  - Orders
+  properties:
+  - type: OpenAPI
+    url: openapi/eventbrite-orders-api-openapi.yml
+- aid: eventbrite:eventbrite-organizations-api
+  name: Eventbrite Organizations API
+  description: The Organizations API from Eventbrite — 1 operation(s) for organizations.
+  humanURL: https://www.eventbrite.com/platform/api
+  baseURL: https://www.eventbriteapi.com/v3
+  tags:
+  - Organizations
+  properties:
+  - type: OpenAPI
+    url: openapi/eventbrite-organizations-api-openapi.yml
+- aid: eventbrite:eventbrite-ticket-classes-api
+  name: Eventbrite Ticket Classes API
+  description: The Ticket Classes API from Eventbrite — 1 operation(s) for ticket classes.
+  humanURL: https://www.eventbrite.com/platform/api
+  baseURL: https://www.eventbriteapi.com/v3
+  tags:
+  - Ticket Classes
+  properties:
+  - type: OpenAPI
+    url: openapi/eventbrite-ticket-classes-api-openapi.yml
+- aid: eventbrite:eventbrite-users-api
+  name: Eventbrite Users API
+  description: The Users API from Eventbrite — 1 operation(s) for users.
+  humanURL: https://www.eventbrite.com/platform/api
+  baseURL: https://www.eventbriteapi.com/v3
+  tags:
+  - Users
+  properties:
+  - type: OpenAPI
+    url: openapi/eventbrite-users-api-openapi.yml
+- aid: eventbrite:eventbrite-venues-api
+  name: Eventbrite Venues API
+  description: The Venues API from Eventbrite — 2 operation(s) for venues.
+  humanURL: https://www.eventbrite.com/platform/api
+  baseURL: https://www.eventbriteapi.com/v3
+  tags:
+  - Venues
+  properties:
+  - type: OpenAPI
+    url: openapi/eventbrite-venues-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/eventbrite-agentic-access.yml
