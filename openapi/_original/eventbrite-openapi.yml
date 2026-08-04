@@ -1,0 +1,443 @@
+openapi: 3.1.0
+info:
+  title: Eventbrite Platform API
+  description: >-
+    Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite
+    Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms
+    the base URL https://www.eventbriteapi.com/v3 and the
+    /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The
+    surrounding resources (organizations, orders, attendees, venues,
+    categories) follow the same conventions documented at
+    https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer
+    token (private token or OAuth-issued token).
+  version: "3.0.0"
+  contact:
+    name: API Evangelist
+    email: kin@apievangelist.com
+  license:
+    name: Proprietary
+servers:
+  - url: https://www.eventbriteapi.com/v3
+    description: Eventbrite v3 production API
+security:
+  - bearerAuth: []
+paths:
+  /users/me/:
+    get:
+      summary: Get the current user
+      description: >-
+        Returns the authenticated user. Confirmed by the Eventbrite Python SDK
+        README: "Not passing an argument returns yourself."
+      operationId: getCurrentUser
+      tags: [Users]
+      responses:
+        "200":
+          description: Current user
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/User" }
+  /users/{user_id}/organizations/:
+    parameters:
+      - { name: user_id, in: path, required: true, schema: { type: string } }
+    get:
+      summary: List organizations for a user
+      operationId: listUserOrganizations
+      tags: [Organizations]
+      responses:
+        "200":
+          description: Paginated list of organizations
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  organizations:
+                    type: array
+                    items: { $ref: "#/components/schemas/Organization" }
+                  pagination: { $ref: "#/components/schemas/Pagination" }
+  /organizations/{organization_id}/events/:
+    parameters:
+      - { name: organization_id, in: path, required: true, schema: { type: string } }
+      - { name: status, in: query, schema: { type: string } }
+      - { name: page, in: query, schema: { type: integer } }
+    get:
+      summary: List events for an organization
+      operationId: listOrganizationEvents
+      tags: [Events]
+      responses:
+        "200":
+          description: Events list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  events:
+                    type: array
+                    items: { $ref: "#/components/schemas/Event" }
+                  pagination: { $ref: "#/components/schemas/Pagination" }
+  /events/{event_id}/:
+    parameters:
+      - { name: event_id, in: path, required: true, schema: { type: string } }
+    get:
+      summary: Get an event
+      description: Confirmed by Eventbrite Python SDK README example get_event('my-event-id').
+      operationId: getEvent
+      tags: [Events]
+      responses:
+        "200":
+          description: Event
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Event" }
+    post:
+      summary: Update an event
+      operationId: updateEvent
+      tags: [Events]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                event: { $ref: "#/components/schemas/Event" }
+      responses:
+        "200":
+          description: Updated event
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Event" }
+  /events/{event_id}/ticket_classes/:
+    parameters:
+      - { name: event_id, in: path, required: true, schema: { type: string } }
+    get:
+      summary: List ticket classes for an event
+      description: >-
+        Confirmed by SDK README: ticket_classes accessible via the expansions
+        parameter on events.
+      operationId: listTicketClasses
+      tags: [Ticket Classes]
+      responses:
+        "200":
+          description: Ticket classes
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ticket_classes:
+                    type: array
+                    items: { $ref: "#/components/schemas/TicketClass" }
+                  pagination: { $ref: "#/components/schemas/Pagination" }
+    post:
+      summary: Create a ticket class
+      operationId: createTicketClass
+      tags: [Ticket Classes]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ticket_class: { $ref: "#/components/schemas/TicketClass" }
+      responses:
+        "200":
+          description: Created ticket class
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/TicketClass" }
+  /events/{event_id}/attendees/:
+    parameters:
+      - { name: event_id, in: path, required: true, schema: { type: string } }
+      - { name: status, in: query, schema: { type: string } }
+      - { name: changed_since, in: query, schema: { type: string, format: date-time } }
+      - { name: page, in: query, schema: { type: integer } }
+    get:
+      summary: List attendees for an event
+      operationId: listEventAttendees
+      tags: [Attendees]
+      responses:
+        "200":
+          description: Attendees list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  attendees:
+                    type: array
+                    items: { $ref: "#/components/schemas/Attendee" }
+                  pagination: { $ref: "#/components/schemas/Pagination" }
+  /events/{event_id}/orders/:
+    parameters:
+      - { name: event_id, in: path, required: true, schema: { type: string } }
+      - { name: status, in: query, schema: { type: string } }
+      - { name: page, in: query, schema: { type: integer } }
+    get:
+      summary: List orders for an event
+      operationId: listEventOrders
+      tags: [Orders]
+      responses:
+        "200":
+          description: Orders list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  orders:
+                    type: array
+                    items: { $ref: "#/components/schemas/Order" }
+                  pagination: { $ref: "#/components/schemas/Pagination" }
+  /orders/{order_id}/:
+    parameters:
+      - { name: order_id, in: path, required: true, schema: { type: string } }
+    get:
+      summary: Get an order
+      operationId: getOrder
+      tags: [Orders]
+      responses:
+        "200":
+          description: Order
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Order" }
+  /venues/{venue_id}/:
+    parameters:
+      - { name: venue_id, in: path, required: true, schema: { type: string } }
+    get:
+      summary: Get a venue
+      operationId: getVenue
+      tags: [Venues]
+      responses:
+        "200":
+          description: Venue
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Venue" }
+  /organizations/{organization_id}/venues/:
+    parameters:
+      - { name: organization_id, in: path, required: true, schema: { type: string } }
+    get:
+      summary: List venues for an organization
+      operationId: listOrganizationVenues
+      tags: [Venues]
+      responses:
+        "200":
+          description: Venues list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  venues:
+                    type: array
+                    items: { $ref: "#/components/schemas/Venue" }
+                  pagination: { $ref: "#/components/schemas/Pagination" }
+    post:
+      summary: Create a venue under an organization
+      operationId: createOrganizationVenue
+      tags: [Venues]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                venue: { $ref: "#/components/schemas/Venue" }
+      responses:
+        "200":
+          description: Created venue
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Venue" }
+  /categories/:
+    get:
+      summary: List event categories
+      operationId: listCategories
+      tags: [Categories]
+      responses:
+        "200":
+          description: Categories list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  categories:
+                    type: array
+                    items: { $ref: "#/components/schemas/Category" }
+                  pagination: { $ref: "#/components/schemas/Pagination" }
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.0 token (private token or OAuth-issued)
+  schemas:
+    Pagination:
+      type: object
+      properties:
+        object_count: { type: integer }
+        page_number: { type: integer }
+        page_size: { type: integer }
+        page_count: { type: integer }
+        has_more_items: { type: boolean }
+        continuation: { type: string }
+    MultipartText:
+      type: object
+      properties:
+        text: { type: string }
+        html: { type: string }
+    Money:
+      type: object
+      properties:
+        currency: { type: string }
+        value: { type: integer, description: Amount in minor units }
+        major_value: { type: string }
+        display: { type: string }
+    User:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        first_name: { type: string }
+        last_name: { type: string }
+        emails:
+          type: array
+          items:
+            type: object
+            properties:
+              email: { type: string, format: email }
+              verified: { type: boolean }
+              primary: { type: boolean }
+    Organization:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        vertical: { type: string }
+        image_id: { type: string }
+        parent_id: { type: string }
+    Event:
+      type: object
+      properties:
+        id: { type: string }
+        name: { $ref: "#/components/schemas/MultipartText" }
+        description: { $ref: "#/components/schemas/MultipartText" }
+        url: { type: string, format: uri }
+        start:
+          type: object
+          properties:
+            timezone: { type: string }
+            local: { type: string }
+            utc: { type: string, format: date-time }
+        end:
+          type: object
+          properties:
+            timezone: { type: string }
+            local: { type: string }
+            utc: { type: string, format: date-time }
+        currency: { type: string }
+        status: { type: string }
+        listed: { type: boolean }
+        shareable: { type: boolean }
+        online_event: { type: boolean }
+        capacity: { type: integer }
+        category_id: { type: string }
+        subcategory_id: { type: string }
+        organization_id: { type: string }
+        venue_id: { type: string }
+        is_free: { type: boolean }
+    TicketClass:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        description: { type: string }
+        cost: { $ref: "#/components/schemas/Money" }
+        fee: { $ref: "#/components/schemas/Money" }
+        free: { type: boolean }
+        donation: { type: boolean }
+        minimum_quantity: { type: integer }
+        maximum_quantity: { type: integer }
+        quantity_total: { type: integer }
+        quantity_sold: { type: integer }
+        sales_start: { type: string, format: date-time }
+        sales_end: { type: string, format: date-time }
+        hidden: { type: boolean }
+    Attendee:
+      type: object
+      properties:
+        id: { type: string }
+        event_id: { type: string }
+        order_id: { type: string }
+        ticket_class_id: { type: string }
+        ticket_class_name: { type: string }
+        checked_in: { type: boolean }
+        cancelled: { type: boolean }
+        refunded: { type: boolean }
+        status: { type: string }
+        created: { type: string, format: date-time }
+        changed: { type: string, format: date-time }
+        profile:
+          type: object
+          properties:
+            name: { type: string }
+            email: { type: string, format: email }
+            first_name: { type: string }
+            last_name: { type: string }
+    Order:
+      type: object
+      properties:
+        id: { type: string }
+        event_id: { type: string }
+        status: { type: string }
+        created: { type: string, format: date-time }
+        changed: { type: string, format: date-time }
+        name: { type: string }
+        first_name: { type: string }
+        last_name: { type: string }
+        email: { type: string, format: email }
+        costs:
+          type: object
+          properties:
+            base_price: { $ref: "#/components/schemas/Money" }
+            eventbrite_fee: { $ref: "#/components/schemas/Money" }
+            gross: { $ref: "#/components/schemas/Money" }
+            payment_fee: { $ref: "#/components/schemas/Money" }
+            tax: { $ref: "#/components/schemas/Money" }
+    Venue:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        capacity: { type: integer }
+        age_restriction: { type: string }
+        latitude: { type: string }
+        longitude: { type: string }
+        address:
+          type: object
+          properties:
+            address_1: { type: string }
+            address_2: { type: string }
+            city: { type: string }
+            region: { type: string }
+            postal_code: { type: string }
+            country: { type: string }
+            latitude: { type: string }
+            longitude: { type: string }
+            localized_address_display: { type: string }
+            localized_area_display: { type: string }
+    Category:
+      type: object
+      properties:
+        id: { type: string }
+        resource_uri: { type: string, format: uri }
+        name: { type: string }
+        name_localized: { type: string }
+        short_name: { type: string }
+        short_name_localized: { type: string }

@@ -1,0 +1,28 @@
+{
+  "provider": "eventbrite",
+  "sources": [
+    "eventbrite-attendees-api-openapi.yml",
+    "eventbrite-categories-api-openapi.yml",
+    "eventbrite-events-api-openapi.yml",
+    "eventbrite-orders-api-openapi.yml",
+    "eventbrite-organizations-api-openapi.yml",
+    "eventbrite-ticket-classes-api-openapi.yml",
+    "eventbrite-users-api-openapi.yml",
+    "eventbrite-venues-api-openapi.yml"
+  ],
+  "outputs": [
+    "eventbrite-attendees-api-openapi.yml",
+    "eventbrite-categories-api-openapi.yml",
+    "eventbrite-events-api-openapi.yml",
+    "eventbrite-orders-api-openapi.yml",
+    "eventbrite-organizations-api-openapi.yml",
+    "eventbrite-ticket-classes-api-openapi.yml",
+    "eventbrite-users-api-openapi.yml",
+    "eventbrite-venues-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
