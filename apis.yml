@@ -170,6 +170,15 @@ apis:
   - type: OpenAPI
     url: openapi/eventbrite-venues-api-openapi.yml
 common:
+  - type: IssueTracker
+    url: https://github.com/eventbrite/eventbrite-sdk-python/issues
+  - type: Releases
+    url: https://github.com/eventbrite/eventbrite-sdk-python/releases
+  - type: ContributionGuide
+    url: https://github.com/eventbrite/eventbrite-sdk-python/blob/master/CONTRIBUTING.rst
+  - type: License
+    name: Apache-2.0
+    url: https://github.com/eventbrite/eventbrite-sdk-python/blob/master/LICENSE
   - type: AgenticAccess
     url: agentic-access/eventbrite-agentic-access.yml
   - type: TrustCenter
