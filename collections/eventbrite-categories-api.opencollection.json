@@ -1,0 +1,35 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Eventbrite Platform Attendees Categories API",
+    "version": "3.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Categories",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List event categories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/categories/"
+          },
+          "docs": "List event categories"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

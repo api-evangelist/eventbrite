@@ -1,0 +1,64 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Eventbrite Platform Attendees Ticket Classes API",
+    "version": "3.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Ticket Classes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List ticket classes for an event",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/events/:event_id/ticket_classes/",
+            "params": [
+              {
+                "name": "event_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Confirmed by SDK README: ticket_classes accessible via the expansions parameter on events."
+        },
+        {
+          "info": {
+            "name": "Create a ticket class",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://www.eventbriteapi.com/v3/events/:event_id/ticket_classes/",
+            "params": [
+              {
+                "name": "event_id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a ticket class"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

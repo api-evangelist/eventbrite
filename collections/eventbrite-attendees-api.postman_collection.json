@@ -1,0 +1,167 @@
+{
+  "item": [
+    {
+      "id": "007a92ca-fc0b-4d78-935c-aedfb2d37e87",
+      "name": "Attendees",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e6bb6b33-c24a-40b2-a095-4d003db151e5",
+          "name": "List attendees for an event",
+          "request": {
+            "name": "List attendees for an event",
+            "description": {},
+            "url": {
+              "path": [
+                "events",
+                ":event_id",
+                "attendees",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "changed_since",
+                  "value": "<dateTime>"
+                },
+                {
+                  "disabled": false,
+                  "key": "page",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "event_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "31196568-7ba0-4b2e-8396-7b8bb8eb27d8",
+              "name": "Attendees list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "events",
+                    ":event_id",
+                    "attendees",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "changed_since",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "key": "page",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "event_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"attendees\": [\n    {\n      \"id\": \"string\",\n      \"event_id\": \"string\",\n      \"order_id\": \"string\",\n      \"ticket_class_id\": \"string\",\n      \"ticket_class_name\": \"string\",\n      \"checked_in\": true,\n      \"cancelled\": false,\n      \"refunded\": true,\n      \"status\": \"string\",\n      \"created\": \"1981-05-18T20:22:07.629Z\",\n      \"changed\": \"1980-10-06T12:56:50.438Z\",\n      \"profile\": {\n        \"name\": \"string\",\n        \"email\": \"SwOss2E3@ozIMcAvrcJIFFveR.wkhl\",\n        \"first_name\": \"string\",\n        \"last_name\": \"string\"\n      }\n    },\n    {\n      \"id\": \"string\",\n      \"event_id\": \"string\",\n      \"order_id\": \"string\",\n      \"ticket_class_id\": \"string\",\n      \"ticket_class_name\": \"string\",\n      \"checked_in\": true,\n      \"cancelled\": false,\n      \"refunded\": false,\n      \"status\": \"string\",\n      \"created\": \"2022-12-19T15:39:35.725Z\",\n      \"changed\": \"1981-05-08T09:18:50.468Z\",\n      \"profile\": {\n        \"name\": \"string\",\n        \"email\": \"g-p@DndraespGVkhWFLGHFcHgFQUNdkOTDstN.lip\",\n        \"first_name\": \"string\",\n        \"last_name\": \"string\"\n      }\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 5353,\n    \"page_number\": 9488,\n    \"page_size\": 1660,\n    \"page_count\": 6050,\n    \"has_more_items\": false,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.eventbriteapi.com/v3",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "24c586cf-afc0-48ca-b155-47b34a9b46ca",
+    "name": "Eventbrite Platform Attendees API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).\n\nContact Support:\n Name: API Evangelist\n Email: kin@apievangelist.com",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "item": [
+    {
+      "id": "c560be7a-c3f7-42c5-b532-ca7f1e1af9a1",
+      "name": "Users",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "372a0c08-ca34-4a04-9124-3f502599b07c",
+          "name": "Get the current user",
+          "request": {
+            "name": "Get the current user",
+            "description": {
+              "content": "Returns the authenticated user. Confirmed by the Eventbrite Python SDK README: \"Not passing an argument returns yourself.\"",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "users",
+                "me",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "430d066d-c782-4ed4-a7cb-3e2dc7b68075",
+              "name": "Current user",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "users",
+                    "me",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"first_name\": \"string\",\n  \"last_name\": \"string\",\n  \"emails\": [\n    {\n      \"email\": \"PpF7UP6AGUFS@RYB.jel\",\n      \"verified\": false,\n      \"primary\": true\n    },\n    {\n      \"email\": \"jlpWA6998R@BvDEKYlqZKUDQINHERTESkTsDhbDHfN.xpz\",\n      \"verified\": false,\n      \"primary\": false\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.eventbriteapi.com/v3",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "185ccaf1-a954-47ac-9c56-ece1c96e5ada",
+    "name": "Eventbrite Platform Attendees Users API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).\n\nContact Support:\n Name: API Evangelist\n Email: kin@apievangelist.com",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "item": [
+    {
+      "id": "f29cd87d-937d-45d0-83be-4525e8822e34",
+      "name": "Categories",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "da1fe017-8f1a-48ee-ac42-120424822896",
+          "name": "List event categories",
+          "request": {
+            "name": "List event categories",
+            "description": {},
+            "url": {
+              "path": [
+                "categories",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1e3789fc-30d9-49dc-a4cc-2c3fb83301ae",
+              "name": "Categories list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "categories",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"categories\": [\n    {\n      \"id\": \"string\",\n      \"resource_uri\": \"https://slDbIIRUVmcfhthvuALoQNIZClHizWes.lksGfKFBxjiby2h7+FzWyv\",\n      \"name\": \"string\",\n      \"name_localized\": \"string\",\n      \"short_name\": \"string\",\n      \"short_name_localized\": \"string\"\n    },\n    {\n      \"id\": \"string\",\n      \"resource_uri\": \"http://slPXYgorDZ.ueis.CRS\",\n      \"name\": \"string\",\n      \"name_localized\": \"string\",\n      \"short_name\": \"string\",\n      \"short_name_localized\": \"string\"\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 1615,\n    \"page_number\": 7341,\n    \"page_size\": 3561,\n    \"page_count\": 1257,\n    \"has_more_items\": true,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.eventbriteapi.com/v3",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "4b10104c-1638-44ae-a7ee-abd141fd8441",
+    "name": "Eventbrite Platform Attendees Categories API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).\n\nContact Support:\n Name: API Evangelist\n Email: kin@apievangelist.com",
+      "type": "text/plain"
+    }
+  }
+}

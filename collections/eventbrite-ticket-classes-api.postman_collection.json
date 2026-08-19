@@ -1,0 +1,259 @@
+{
+  "item": [
+    {
+      "id": "d17efaea-cde3-4456-bf00-e194ef4380bd",
+      "name": "Ticket Classes",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "9ebec4d1-8ba6-4cb3-99f8-ed5446ff7550",
+          "name": "List ticket classes for an event",
+          "request": {
+            "name": "List ticket classes for an event",
+            "description": {
+              "content": "Confirmed by SDK README: ticket_classes accessible via the expansions parameter on events.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "events",
+                ":event_id",
+                "ticket_classes",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "event_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bb8afe1a-439e-4c5a-8623-577a81a60022",
+              "name": "Ticket classes",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "events",
+                    ":event_id",
+                    "ticket_classes",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "event_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ticket_classes\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"cost\": {\n        \"currency\": \"string\",\n        \"value\": 7545,\n        \"major_value\": \"string\",\n        \"display\": \"string\"\n      },\n      \"fee\": {\n        \"currency\": \"string\",\n        \"value\": 7447,\n        \"major_value\": \"string\",\n        \"display\": \"string\"\n      },\n      \"free\": true,\n      \"donation\": false,\n      \"minimum_quantity\": 6133,\n      \"maximum_quantity\": 6715,\n      \"quantity_total\": 8813,\n      \"quantity_sold\": 9811,\n      \"sales_start\": \"2009-11-05T21:18:45.297Z\",\n      \"sales_end\": \"1972-06-14T06:45:50.207Z\",\n      \"hidden\": true\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"description\": \"string\",\n      \"cost\": {\n        \"currency\": \"string\",\n        \"value\": 40,\n        \"major_value\": \"string\",\n        \"display\": \"string\"\n      },\n      \"fee\": {\n        \"currency\": \"string\",\n        \"value\": 2047,\n        \"major_value\": \"string\",\n        \"display\": \"string\"\n      },\n      \"free\": true,\n      \"donation\": false,\n      \"minimum_quantity\": 9692,\n      \"maximum_quantity\": 5881,\n      \"quantity_total\": 4954,\n      \"quantity_sold\": 8873,\n      \"sales_start\": \"1989-04-28T22:27:42.681Z\",\n      \"sales_end\": \"1950-01-18T00:38:12.159Z\",\n      \"hidden\": false\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 6023,\n    \"page_number\": 9702,\n    \"page_size\": 8142,\n    \"page_count\": 688,\n    \"has_more_items\": false,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "391051dd-9384-4974-ba8f-ace3bafd708b",
+          "name": "Create a ticket class",
+          "request": {
+            "name": "Create a ticket class",
+            "description": {},
+            "url": {
+              "path": [
+                "events",
+                ":event_id",
+                "ticket_classes",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "event_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ticket_class\": {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"description\": \"<string>\",\n    \"cost\": {\n      \"currency\": \"<string>\",\n      \"value\": \"<integer>\",\n      \"major_value\": \"<string>\",\n      \"display\": \"<string>\"\n    },\n    \"fee\": {\n      \"currency\": \"<string>\",\n      \"value\": \"<integer>\",\n      \"major_value\": \"<string>\",\n      \"display\": \"<string>\"\n    },\n    \"free\": \"<boolean>\",\n    \"donation\": \"<boolean>\",\n    \"minimum_quantity\": \"<integer>\",\n    \"maximum_quantity\": \"<integer>\",\n    \"quantity_total\": \"<integer>\",\n    \"quantity_sold\": \"<integer>\",\n    \"sales_start\": \"<dateTime>\",\n    \"sales_end\": \"<dateTime>\",\n    \"hidden\": \"<boolean>\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "d4d336f1-6ed8-4a1f-b64b-b24ea5f1ecb5",
+              "name": "Created ticket class",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "events",
+                    ":event_id",
+                    "ticket_classes",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "event_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ticket_class\": {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"description\": \"string\",\n    \"cost\": {\n      \"currency\": \"string\",\n      \"value\": 1488,\n      \"major_value\": \"string\",\n      \"display\": \"string\"\n    },\n    \"fee\": {\n      \"currency\": \"string\",\n      \"value\": 622,\n      \"major_value\": \"string\",\n      \"display\": \"string\"\n    },\n    \"free\": true,\n    \"donation\": false,\n    \"minimum_quantity\": 3975,\n    \"maximum_quantity\": 3455,\n    \"quantity_total\": 7852,\n    \"quantity_sold\": 8455,\n    \"sales_start\": \"1993-05-13T15:22:32.317Z\",\n    \"sales_end\": \"1988-03-26T18:45:43.455Z\",\n    \"hidden\": true\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"cost\": {\n    \"currency\": \"string\",\n    \"value\": 9350,\n    \"major_value\": \"string\",\n    \"display\": \"string\"\n  },\n  \"fee\": {\n    \"currency\": \"string\",\n    \"value\": 9863,\n    \"major_value\": \"string\",\n    \"display\": \"string\"\n  },\n  \"free\": false,\n  \"donation\": true,\n  \"minimum_quantity\": 5898,\n  \"maximum_quantity\": 403,\n  \"quantity_total\": 6978,\n  \"quantity_sold\": 8294,\n  \"sales_start\": \"1981-05-31T01:42:14.697Z\",\n  \"sales_end\": \"1960-12-28T21:49:34.371Z\",\n  \"hidden\": false\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.eventbriteapi.com/v3",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "61d6763e-1be6-4a3a-af1b-bd66b59fd074",
+    "name": "Eventbrite Platform Attendees Ticket Classes API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).\n\nContact Support:\n Name: API Evangelist\n Email: kin@apievangelist.com",
+      "type": "text/plain"
+    }
+  }
+}

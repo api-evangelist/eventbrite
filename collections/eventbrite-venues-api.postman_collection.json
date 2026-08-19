@@ -1,0 +1,351 @@
+{
+  "item": [
+    {
+      "id": "ea576fd8-ef1c-4bb1-a957-ac1875104105",
+      "name": "Venues",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3031ff0c-45a0-4b59-a3eb-4fa42262d9ca",
+          "name": "Get a venue",
+          "request": {
+            "name": "Get a venue",
+            "description": {},
+            "url": {
+              "path": [
+                "venues",
+                ":venue_id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "venue_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a04e9940-f239-4421-b386-d2cdeda8c904",
+              "name": "Venue",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "venues",
+                    ":venue_id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "venue_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"capacity\": 2139,\n  \"age_restriction\": \"string\",\n  \"latitude\": \"string\",\n  \"longitude\": \"string\",\n  \"address\": {\n    \"address_1\": \"string\",\n    \"address_2\": \"string\",\n    \"city\": \"string\",\n    \"region\": \"string\",\n    \"postal_code\": \"string\",\n    \"country\": \"string\",\n    \"latitude\": \"string\",\n    \"longitude\": \"string\",\n    \"localized_address_display\": \"string\",\n    \"localized_area_display\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f1ec1a28-de31-49ae-9fec-153ab4e12e5a",
+          "name": "List venues for an organization",
+          "request": {
+            "name": "List venues for an organization",
+            "description": {},
+            "url": {
+              "path": [
+                "organizations",
+                ":organization_id",
+                "venues",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "organization_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f7284d1a-7760-4191-8ea2-a4f7f9abdb8a",
+              "name": "Venues list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "organizations",
+                    ":organization_id",
+                    "venues",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "organization_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"venues\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"capacity\": 5888,\n      \"age_restriction\": \"string\",\n      \"latitude\": \"string\",\n      \"longitude\": \"string\",\n      \"address\": {\n        \"address_1\": \"string\",\n        \"address_2\": \"string\",\n        \"city\": \"string\",\n        \"region\": \"string\",\n        \"postal_code\": \"string\",\n        \"country\": \"string\",\n        \"latitude\": \"string\",\n        \"longitude\": \"string\",\n        \"localized_address_display\": \"string\",\n        \"localized_area_display\": \"string\"\n      }\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"capacity\": 8619,\n      \"age_restriction\": \"string\",\n      \"latitude\": \"string\",\n      \"longitude\": \"string\",\n      \"address\": {\n        \"address_1\": \"string\",\n        \"address_2\": \"string\",\n        \"city\": \"string\",\n        \"region\": \"string\",\n        \"postal_code\": \"string\",\n        \"country\": \"string\",\n        \"latitude\": \"string\",\n        \"longitude\": \"string\",\n        \"localized_address_display\": \"string\",\n        \"localized_area_display\": \"string\"\n      }\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 1619,\n    \"page_number\": 8577,\n    \"page_size\": 8169,\n    \"page_count\": 1965,\n    \"has_more_items\": true,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c1b7b33f-f555-419d-8e77-89fcc0a83dd8",
+          "name": "Create a venue under an organization",
+          "request": {
+            "name": "Create a venue under an organization",
+            "description": {},
+            "url": {
+              "path": [
+                "organizations",
+                ":organization_id",
+                "venues",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "organization_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"venue\": {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"capacity\": \"<integer>\",\n    \"age_restriction\": \"<string>\",\n    \"latitude\": \"<string>\",\n    \"longitude\": \"<string>\",\n    \"address\": {\n      \"address_1\": \"<string>\",\n      \"address_2\": \"<string>\",\n      \"city\": \"<string>\",\n      \"region\": \"<string>\",\n      \"postal_code\": \"<string>\",\n      \"country\": \"<string>\",\n      \"latitude\": \"<string>\",\n      \"longitude\": \"<string>\",\n      \"localized_address_display\": \"<string>\",\n      \"localized_area_display\": \"<string>\"\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "0c6814cc-e9d6-4e9d-8735-c405e4322396",
+              "name": "Created venue",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "organizations",
+                    ":organization_id",
+                    "venues",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "organization_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"venue\": {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"capacity\": 9664,\n    \"age_restriction\": \"string\",\n    \"latitude\": \"string\",\n    \"longitude\": \"string\",\n    \"address\": {\n      \"address_1\": \"string\",\n      \"address_2\": \"string\",\n      \"city\": \"string\",\n      \"region\": \"string\",\n      \"postal_code\": \"string\",\n      \"country\": \"string\",\n      \"latitude\": \"string\",\n      \"longitude\": \"string\",\n      \"localized_address_display\": \"string\",\n      \"localized_area_display\": \"string\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": \"string\",\n  \"capacity\": 2139,\n  \"age_restriction\": \"string\",\n  \"latitude\": \"string\",\n  \"longitude\": \"string\",\n  \"address\": {\n    \"address_1\": \"string\",\n    \"address_2\": \"string\",\n    \"city\": \"string\",\n    \"region\": \"string\",\n    \"postal_code\": \"string\",\n    \"country\": \"string\",\n    \"latitude\": \"string\",\n    \"longitude\": \"string\",\n    \"localized_address_display\": \"string\",\n    \"localized_area_display\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.eventbriteapi.com/v3",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "8dcc326c-4e27-4329-827b-59d286d73768",
+    "name": "Eventbrite Platform Attendees Venues API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).\n\nContact Support:\n Name: API Evangelist\n Email: kin@apievangelist.com",
+      "type": "text/plain"
+    }
+  }
+}

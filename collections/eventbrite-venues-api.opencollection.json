@@ -1,0 +1,82 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Eventbrite Platform Attendees Venues API",
+    "version": "3.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Venues",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get a venue",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/venues/:venue_id/",
+            "params": [
+              {
+                "name": "venue_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a venue"
+        },
+        {
+          "info": {
+            "name": "List venues for an organization",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.eventbriteapi.com/v3/organizations/:organization_id/venues/",
+            "params": [
+              {
+                "name": "organization_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List venues for an organization"
+        },
+        {
+          "info": {
+            "name": "Create a venue under an organization",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://www.eventbriteapi.com/v3/organizations/:organization_id/venues/",
+            "params": [
+              {
+                "name": "organization_id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a venue under an organization"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

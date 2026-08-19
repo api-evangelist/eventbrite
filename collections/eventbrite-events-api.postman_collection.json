@@ -1,0 +1,372 @@
+{
+  "item": [
+    {
+      "id": "c6f7fa83-65f7-4a09-aea6-99de6594cd12",
+      "name": "Events",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "dd96be20-fd99-49a6-9e6a-670fcd223391",
+          "name": "List events for an organization",
+          "request": {
+            "name": "List events for an organization",
+            "description": {},
+            "url": {
+              "path": [
+                "organizations",
+                ":organization_id",
+                "events",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "status",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "page",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "organization_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9a5aa1db-9bfc-4a20-8677-f31859a0383b",
+              "name": "Events list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "organizations",
+                    ":organization_id",
+                    "events",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "status",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "page",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "organization_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"events\": [\n    {\n      \"id\": \"string\",\n      \"name\": {\n        \"text\": \"string\",\n        \"html\": \"string\"\n      },\n      \"description\": {\n        \"text\": \"string\",\n        \"html\": \"string\"\n      },\n      \"url\": \"http://bsWHjJqIjgkPWqVCfedgx.avC4FYnxIueI1yO\",\n      \"start\": {\n        \"timezone\": \"string\",\n        \"local\": \"string\",\n        \"utc\": \"1949-01-30T00:18:19.450Z\"\n      },\n      \"end\": {\n        \"timezone\": \"string\",\n        \"local\": \"string\",\n        \"utc\": \"1981-11-16T01:58:52.448Z\"\n      },\n      \"currency\": \"string\",\n      \"status\": \"string\",\n      \"listed\": false,\n      \"shareable\": true,\n      \"online_event\": false,\n      \"capacity\": 7480,\n      \"category_id\": \"string\",\n      \"subcategory_id\": \"string\",\n      \"organization_id\": \"string\",\n      \"venue_id\": \"string\",\n      \"is_free\": true\n    },\n    {\n      \"id\": \"string\",\n      \"name\": {\n        \"text\": \"string\",\n        \"html\": \"string\"\n      },\n      \"description\": {\n        \"text\": \"string\",\n        \"html\": \"string\"\n      },\n      \"url\": \"https://Wj.qrltdPmjaQBY3Pw\",\n      \"start\": {\n        \"timezone\": \"string\",\n        \"local\": \"string\",\n        \"utc\": \"1977-07-23T04:04:36.158Z\"\n      },\n      \"end\": {\n        \"timezone\": \"string\",\n        \"local\": \"string\",\n        \"utc\": \"1976-04-13T21:47:18.518Z\"\n      },\n      \"currency\": \"string\",\n      \"status\": \"string\",\n      \"listed\": false,\n      \"shareable\": true,\n      \"online_event\": false,\n      \"capacity\": 3062,\n      \"category_id\": \"string\",\n      \"subcategory_id\": \"string\",\n      \"organization_id\": \"string\",\n      \"venue_id\": \"string\",\n      \"is_free\": false\n    }\n  ],\n  \"pagination\": {\n    \"object_count\": 4782,\n    \"page_number\": 1052,\n    \"page_size\": 9336,\n    \"page_count\": 8535,\n    \"has_more_items\": true,\n    \"continuation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1d0b1c9c-6916-4863-a54b-2ef64b9665ba",
+          "name": "Get an event",
+          "request": {
+            "name": "Get an event",
+            "description": {
+              "content": "Confirmed by Eventbrite Python SDK README example get_event('my-event-id').",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "events",
+                ":event_id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "event_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "421990a0-0b90-48c0-a62a-1d196440e6a5",
+              "name": "Event",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "events",
+                    ":event_id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "event_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": {\n    \"text\": \"string\",\n    \"html\": \"string\"\n  },\n  \"description\": {\n    \"text\": \"string\",\n    \"html\": \"string\"\n  },\n  \"url\": \"https://GbbqeQnCwmFmZ.qewrDUt.3Yd9mTpVfLT0Z4yTF1r\",\n  \"start\": {\n    \"timezone\": \"string\",\n    \"local\": \"string\",\n    \"utc\": \"1992-05-23T02:13:01.942Z\"\n  },\n  \"end\": {\n    \"timezone\": \"string\",\n    \"local\": \"string\",\n    \"utc\": \"1957-01-04T19:31:54.810Z\"\n  },\n  \"currency\": \"string\",\n  \"status\": \"string\",\n  \"listed\": false,\n  \"shareable\": true,\n  \"online_event\": true,\n  \"capacity\": 1070,\n  \"category_id\": \"string\",\n  \"subcategory_id\": \"string\",\n  \"organization_id\": \"string\",\n  \"venue_id\": \"string\",\n  \"is_free\": true\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a13c2040-c819-43dc-b9bf-c5185433d459",
+          "name": "Update an event",
+          "request": {
+            "name": "Update an event",
+            "description": {},
+            "url": {
+              "path": [
+                "events",
+                ":event_id",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "event_id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"event\": {\n    \"id\": \"<string>\",\n    \"name\": {\n      \"text\": \"<string>\",\n      \"html\": \"<string>\"\n    },\n    \"description\": {\n      \"text\": \"<string>\",\n      \"html\": \"<string>\"\n    },\n    \"url\": \"<uri>\",\n    \"start\": {\n      \"timezone\": \"<string>\",\n      \"local\": \"<string>\",\n      \"utc\": \"<dateTime>\"\n    },\n    \"end\": {\n      \"timezone\": \"<string>\",\n      \"local\": \"<string>\",\n      \"utc\": \"<dateTime>\"\n    },\n    \"currency\": \"<string>\",\n    \"status\": \"<string>\",\n    \"listed\": \"<boolean>\",\n    \"shareable\": \"<boolean>\",\n    \"online_event\": \"<boolean>\",\n    \"capacity\": \"<integer>\",\n    \"category_id\": \"<string>\",\n    \"subcategory_id\": \"<string>\",\n    \"organization_id\": \"<string>\",\n    \"venue_id\": \"<string>\",\n    \"is_free\": \"<boolean>\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "b94c5d37-7451-4baa-9ad6-9f95b8945be6",
+              "name": "Updated event",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "events",
+                    ":event_id",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "event_id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"event\": {\n    \"id\": \"string\",\n    \"name\": {\n      \"text\": \"string\",\n      \"html\": \"string\"\n    },\n    \"description\": {\n      \"text\": \"string\",\n      \"html\": \"string\"\n    },\n    \"url\": \"http://NPfYmo.rwe24Ie.SzFj5I,dErk6FXbwQCoHgSDHxNdhoPGVW1RzLP0\",\n    \"start\": {\n      \"timezone\": \"string\",\n      \"local\": \"string\",\n      \"utc\": \"1961-01-08T03:10:36.012Z\"\n    },\n    \"end\": {\n      \"timezone\": \"string\",\n      \"local\": \"string\",\n      \"utc\": \"1966-09-12T04:32:33.770Z\"\n    },\n    \"currency\": \"string\",\n    \"status\": \"string\",\n    \"listed\": false,\n    \"shareable\": true,\n    \"online_event\": false,\n    \"capacity\": 4702,\n    \"category_id\": \"string\",\n    \"subcategory_id\": \"string\",\n    \"organization_id\": \"string\",\n    \"venue_id\": \"string\",\n    \"is_free\": true\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"name\": {\n    \"text\": \"string\",\n    \"html\": \"string\"\n  },\n  \"description\": {\n    \"text\": \"string\",\n    \"html\": \"string\"\n  },\n  \"url\": \"https://GbbqeQnCwmFmZ.qewrDUt.3Yd9mTpVfLT0Z4yTF1r\",\n  \"start\": {\n    \"timezone\": \"string\",\n    \"local\": \"string\",\n    \"utc\": \"1992-05-23T02:13:01.942Z\"\n  },\n  \"end\": {\n    \"timezone\": \"string\",\n    \"local\": \"string\",\n    \"utc\": \"1957-01-04T19:31:54.810Z\"\n  },\n  \"currency\": \"string\",\n  \"status\": \"string\",\n  \"listed\": false,\n  \"shareable\": true,\n  \"online_event\": true,\n  \"capacity\": 1070,\n  \"category_id\": \"string\",\n  \"subcategory_id\": \"string\",\n  \"organization_id\": \"string\",\n  \"venue_id\": \"string\",\n  \"is_free\": true\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.eventbriteapi.com/v3",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "d70ad18d-d0fb-4578-b5cb-d55a8f2093bc",
+    "name": "Eventbrite Platform Attendees Events API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).\n\nContact Support:\n Name: API Evangelist\n Email: kin@apievangelist.com",
+      "type": "text/plain"
+    }
+  }
+}
