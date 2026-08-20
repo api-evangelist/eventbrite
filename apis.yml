@@ -16,6 +16,11 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/eventbrite.png
 tags:
+  - Event
+  - Event Technology
+  - Ticketing
+  - Marketplace
+tags_raw:
   - Events
   - Event Technology
   - Ticketing
@@ -28,6 +33,14 @@ apis:
 - aid: eventbrite:platform-api
   name: Eventbrite Platform API
   tags:
+  - Event
+  - Attendees
+  - Order
+  - Organization
+  - Ticket Classes
+  - Venues
+  - Categories
+  tags_raw:
   - Events
   - Attendees
   - Orders
@@ -55,6 +68,12 @@ apis:
 - aid: eventbrite:webhooks
   name: Eventbrite Webhooks
   tags:
+  - Webhook
+  - Event
+  - Order
+  - Notification
+  - Automation
+  tags_raw:
   - Webhooks
   - Events
   - Orders
@@ -115,6 +134,8 @@ apis:
   humanURL: https://www.eventbrite.com/platform/api
   baseURL: https://www.eventbriteapi.com/v3
   tags:
+  - Event
+  tags_raw:
   - Events
   properties:
   - type: OpenAPI
@@ -125,6 +146,8 @@ apis:
   humanURL: https://www.eventbrite.com/platform/api
   baseURL: https://www.eventbriteapi.com/v3
   tags:
+  - Order
+  tags_raw:
   - Orders
   properties:
   - type: OpenAPI
@@ -135,6 +158,8 @@ apis:
   humanURL: https://www.eventbrite.com/platform/api
   baseURL: https://www.eventbriteapi.com/v3
   tags:
+  - Organization
+  tags_raw:
   - Organizations
   properties:
   - type: OpenAPI
@@ -155,6 +180,8 @@ apis:
   humanURL: https://www.eventbrite.com/platform/api
   baseURL: https://www.eventbriteapi.com/v3
   tags:
+  - User
+  tags_raw:
   - Users
   properties:
   - type: OpenAPI
