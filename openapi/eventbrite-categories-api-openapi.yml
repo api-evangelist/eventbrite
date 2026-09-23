@@ -1,7 +1,7 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Eventbrite Platform Attendees Categories API
-  description: Partial OpenAPI for the Eventbrite Platform API. The official Eventbrite Python SDK at https://github.com/eventbrite/eventbrite-sdk-python confirms the base URL https://www.eventbriteapi.com/v3 and the /users/me/, /events/{id}/, and /ticket_classes endpoint patterns. The surrounding resources (organizations, orders, attendees, venues, categories) follow the same conventions documented at https://www.eventbrite.com/platform/api. Authentication is OAuth 2.0 bearer token (private token or OAuth-issued token).
+  title: Eventbrite Platform Categories API
+  description: Partial OpenAPI for the Eventbrite Platform API.
   version: 3.0.0
   contact:
     name: API Evangelist

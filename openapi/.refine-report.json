@@ -1,14 +1,7 @@
 {
   "provider": "eventbrite",
   "sources": [
-    "eventbrite-attendees-api-openapi.yml",
-    "eventbrite-categories-api-openapi.yml",
-    "eventbrite-events-api-openapi.yml",
-    "eventbrite-orders-api-openapi.yml",
-    "eventbrite-organizations-api-openapi.yml",
-    "eventbrite-ticket-classes-api-openapi.yml",
-    "eventbrite-users-api-openapi.yml",
-    "eventbrite-venues-api-openapi.yml"
+    "_original/eventbrite-openapi.yml"
   ],
   "outputs": [
     "eventbrite-attendees-api-openapi.yml",
@@ -23,6 +16,27 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "eventbrite-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "eventbrite-openapi.yml: declared missing tag: Attendees",
+    "eventbrite-openapi.yml: declared missing tag: Categories",
+    "eventbrite-openapi.yml: declared missing tag: Events",
+    "eventbrite-openapi.yml: declared missing tag: Orders",
+    "eventbrite-openapi.yml: declared missing tag: Organizations",
+    "eventbrite-openapi.yml: declared missing tag: Ticket Classes",
+    "eventbrite-openapi.yml: declared missing tag: Users",
+    "eventbrite-openapi.yml: declared missing tag: Venues",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "eventbrite-attendees-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "eventbrite-categories-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "eventbrite-events-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "eventbrite-orders-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "eventbrite-organizations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "eventbrite-ticket-classes-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "eventbrite-users-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "eventbrite-venues-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
