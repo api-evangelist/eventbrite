@@ -57,21 +57,6 @@ paths:
                     $ref: '#/components/schemas/Pagination'
 components:
   schemas:
-    Pagination:
-      type: object
-      properties:
-        object_count:
-          type: integer
-        page_number:
-          type: integer
-        page_size:
-          type: integer
-        page_count:
-          type: integer
-        has_more_items:
-          type: boolean
-        continuation:
-          type: string
     Attendee:
       type: object
       properties:
@@ -111,6 +96,21 @@ components:
               type: string
             last_name:
               type: string
+    Pagination:
+      type: object
+      properties:
+        object_count:
+          type: integer
+        page_number:
+          type: integer
+        page_size:
+          type: integer
+        page_count:
+          type: integer
+        has_more_items:
+          type: boolean
+        continuation:
+          type: string
   securitySchemes:
     bearerAuth:
       type: http

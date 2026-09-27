@@ -38,6 +38,21 @@ paths:
                     $ref: '#/components/schemas/Pagination'
 components:
   schemas:
+    Pagination:
+      type: object
+      properties:
+        object_count:
+          type: integer
+        page_number:
+          type: integer
+        page_size:
+          type: integer
+        page_count:
+          type: integer
+        has_more_items:
+          type: boolean
+        continuation:
+          type: string
     Category:
       type: object
       properties:
@@ -53,21 +68,6 @@ components:
         short_name:
           type: string
         short_name_localized:
-          type: string
-    Pagination:
-      type: object
-      properties:
-        object_count:
-          type: integer
-        page_number:
-          type: integer
-        page_size:
-          type: integer
-        page_count:
-          type: integer
-        has_more_items:
-          type: boolean
-        continuation:
           type: string
   securitySchemes:
     bearerAuth:

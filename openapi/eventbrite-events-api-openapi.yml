@@ -93,6 +93,28 @@ paths:
                 $ref: '#/components/schemas/Event'
 components:
   schemas:
+    MultipartText:
+      type: object
+      properties:
+        text:
+          type: string
+        html:
+          type: string
+    Pagination:
+      type: object
+      properties:
+        object_count:
+          type: integer
+        page_number:
+          type: integer
+        page_size:
+          type: integer
+        page_count:
+          type: integer
+        has_more_items:
+          type: boolean
+        continuation:
+          type: string
     Event:
       type: object
       properties:
@@ -147,28 +169,6 @@ components:
           type: string
         is_free:
           type: boolean
-    MultipartText:
-      type: object
-      properties:
-        text:
-          type: string
-        html:
-          type: string
-    Pagination:
-      type: object
-      properties:
-        object_count:
-          type: integer
-        page_number:
-          type: integer
-        page_size:
-          type: integer
-        page_count:
-          type: integer
-        has_more_items:
-          type: boolean
-        continuation:
-          type: string
   securitySchemes:
     bearerAuth:
       type: http

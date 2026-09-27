@@ -71,18 +71,6 @@ paths:
                 $ref: '#/components/schemas/Order'
 components:
   schemas:
-    Money:
-      type: object
-      properties:
-        currency:
-          type: string
-        value:
-          type: integer
-          description: Amount in minor units
-        major_value:
-          type: string
-        display:
-          type: string
     Order:
       type: object
       properties:
@@ -134,6 +122,18 @@ components:
         has_more_items:
           type: boolean
         continuation:
+          type: string
+    Money:
+      type: object
+      properties:
+        currency:
+          type: string
+        value:
+          type: integer
+          description: Amount in minor units
+        major_value:
+          type: string
+        display:
           type: string
   securitySchemes:
     bearerAuth:
