@@ -84,6 +84,21 @@ paths:
                 $ref: '#/components/schemas/Venue'
 components:
   schemas:
+    Pagination:
+      type: object
+      properties:
+        object_count:
+          type: integer
+        page_number:
+          type: integer
+        page_size:
+          type: integer
+        page_count:
+          type: integer
+        has_more_items:
+          type: boolean
+        continuation:
+          type: string
     Venue:
       type: object
       properties:
@@ -122,21 +137,6 @@ components:
               type: string
             localized_area_display:
               type: string
-    Pagination:
-      type: object
-      properties:
-        object_count:
-          type: integer
-        page_number:
-          type: integer
-        page_size:
-          type: integer
-        page_count:
-          type: integer
-        has_more_items:
-          type: boolean
-        continuation:
-          type: string
   securitySchemes:
     bearerAuth:
       type: http

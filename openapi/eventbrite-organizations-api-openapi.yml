@@ -44,19 +44,6 @@ paths:
                     $ref: '#/components/schemas/Pagination'
 components:
   schemas:
-    Organization:
-      type: object
-      properties:
-        id:
-          type: string
-        name:
-          type: string
-        vertical:
-          type: string
-        image_id:
-          type: string
-        parent_id:
-          type: string
     Pagination:
       type: object
       properties:
@@ -71,6 +58,19 @@ components:
         has_more_items:
           type: boolean
         continuation:
+          type: string
+    Organization:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        vertical:
+          type: string
+        image_id:
+          type: string
+        parent_id:
           type: string
   securitySchemes:
     bearerAuth:

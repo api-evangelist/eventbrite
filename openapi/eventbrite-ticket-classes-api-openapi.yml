@@ -66,6 +66,21 @@ paths:
                 $ref: '#/components/schemas/TicketClass'
 components:
   schemas:
+    Pagination:
+      type: object
+      properties:
+        object_count:
+          type: integer
+        page_number:
+          type: integer
+        page_size:
+          type: integer
+        page_count:
+          type: integer
+        has_more_items:
+          type: boolean
+        continuation:
+          type: string
     Money:
       type: object
       properties:
@@ -111,21 +126,6 @@ components:
           format: date-time
         hidden:
           type: boolean
-    Pagination:
-      type: object
-      properties:
-        object_count:
-          type: integer
-        page_number:
-          type: integer
-        page_size:
-          type: integer
-        page_count:
-          type: integer
-        has_more_items:
-          type: boolean
-        continuation:
-          type: string
   securitySchemes:
     bearerAuth:
       type: http
