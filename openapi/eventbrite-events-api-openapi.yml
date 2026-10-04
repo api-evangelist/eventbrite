@@ -93,13 +93,6 @@ paths:
                 $ref: '#/components/schemas/Event'
 components:
   schemas:
-    MultipartText:
-      type: object
-      properties:
-        text:
-          type: string
-        html:
-          type: string
     Pagination:
       type: object
       properties:
@@ -114,6 +107,13 @@ components:
         has_more_items:
           type: boolean
         continuation:
+          type: string
+    MultipartText:
+      type: object
+      properties:
+        text:
+          type: string
+        html:
           type: string
     Event:
       type: object
