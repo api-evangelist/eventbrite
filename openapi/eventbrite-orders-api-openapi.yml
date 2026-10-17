@@ -71,21 +71,6 @@ paths:
                 $ref: '#/components/schemas/Order'
 components:
   schemas:
-    Pagination:
-      type: object
-      properties:
-        object_count:
-          type: integer
-        page_number:
-          type: integer
-        page_size:
-          type: integer
-        page_count:
-          type: integer
-        has_more_items:
-          type: boolean
-        continuation:
-          type: string
     Order:
       type: object
       properties:
@@ -134,6 +119,21 @@ components:
         major_value:
           type: string
         display:
+          type: string
+    Pagination:
+      type: object
+      properties:
+        object_count:
+          type: integer
+        page_number:
+          type: integer
+        page_size:
+          type: integer
+        page_count:
+          type: integer
+        has_more_items:
+          type: boolean
+        continuation:
           type: string
   securitySchemes:
     bearerAuth:
