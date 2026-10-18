@@ -107,7 +107,7 @@
     - alpha
     in_cloud: true
     builder: unknown (community connector; contributor not in the record)
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: eventbrite-fivetran
   label: Fivetran
@@ -133,7 +133,7 @@
     - connectors/applications/eventbrite
     vendor_link: https://www.eventbrite.com/
     builder: Fivetran
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: eventbrite-meltano
   label: Meltano
@@ -162,7 +162,7 @@
     quality:
     - gold
     builder: 'community (Meltano Hub variant maintainers: hotgluexyz)'
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: eventbrite-zoom-own
   label: Zoom (own)
