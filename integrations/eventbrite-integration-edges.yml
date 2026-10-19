@@ -178,6 +178,276 @@ edges:
   detected: '2026-10-18'
   detected_by: mirror-platform-listings.py
   category: Zoom app
+- partner_name: AWeber
+  app: AWeber
+  partner: aweber
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://www.eventbrite.com/apps/aweber/
+  category: Eventbrite app
+  contract_reference:
+    register: Eventbrite App Marketplace (www.eventbrite.com/api/v3/apps/, public JSON)
+    spec_file: null
+    role: eventbrite-listed-app
+    registered_name: AWeber
+    matched_domain: aweber.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - AWeber
+    signal_note: 'builder not stated in the register: direction unknown, out of position shares'
+    detected_by: sweep-events-ticketing.py
+    detected: '2026-10-18'
+    identity_source: builder not stated in the register; name check = app title
+  detected_by: sweep-events-ticketing.py
+  detected: '2026-10-18'
+- partner_name: Bandsintown Promoter
+  app: Bandsintown Promoter
+  partner: bandsintown
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://www.eventbrite.com/apps/bandsintown-promoter/
+  category: Eventbrite app
+  contract_reference:
+    register: Eventbrite App Marketplace (www.eventbrite.com/api/v3/apps/, public JSON)
+    spec_file: null
+    role: eventbrite-listed-app
+    registered_name: Bandsintown Promoter
+    matched_domain: bandsintown.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Bandsintown Promoter
+    signal_note: 'builder not stated in the register: direction unknown, out of position shares'
+    detected_by: sweep-events-ticketing.py
+    detected: '2026-10-18'
+    identity_source: builder not stated in the register; name check = app title
+  detected_by: sweep-events-ticketing.py
+  detected: '2026-10-18'
+- partner_name: Constant Contact
+  app: Constant Contact
+  partner: constant-contact
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://www.eventbrite.com/apps/constant-contact/
+  category: Eventbrite app
+  contract_reference:
+    register: Eventbrite App Marketplace (www.eventbrite.com/api/v3/apps/, public JSON)
+    spec_file: null
+    role: eventbrite-listed-app
+    registered_name: Constant Contact
+    matched_domain: constantcontact.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Constant Contact
+    signal_note: 'builder not stated in the register: direction unknown, out of position shares'
+    detected_by: sweep-events-ticketing.py
+    detected: '2026-10-18'
+    identity_source: builder not stated in the register; name check = app title
+  detected_by: sweep-events-ticketing.py
+  detected: '2026-10-18'
+- partner_name: 'Humanitru '
+  app: 'Humanitru '
+  partner: humanitru
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://www.eventbrite.com/apps/Humanitru/
+  category: Eventbrite app
+  contract_reference:
+    register: Eventbrite App Marketplace (www.eventbrite.com/api/v3/apps/, public JSON)
+    spec_file: null
+    role: eventbrite-listed-app
+    registered_name: 'Humanitru '
+    matched_domain: humanitru.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - 'Humanitru '
+    signal_note: 'builder not stated in the register: direction unknown, out of position shares'
+    detected_by: sweep-events-ticketing.py
+    detected: '2026-10-18'
+    identity_source: builder not stated in the register; name check = app title
+  detected_by: sweep-events-ticketing.py
+  detected: '2026-10-18'
+- partner_name: Klaviyo App
+  app: Klaviyo App
+  partner: klaviyo
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://www.eventbrite.com/apps/klaviyo-app/
+  category: Eventbrite app
+  contract_reference:
+    register: Eventbrite App Marketplace (www.eventbrite.com/api/v3/apps/, public JSON)
+    spec_file: null
+    role: eventbrite-listed-app
+    registered_name: Klaviyo App
+    matched_domain: klaviyo.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Klaviyo App
+    signal_note: 'builder not stated in the register: direction unknown, out of position shares'
+    detected_by: sweep-events-ticketing.py
+    detected: '2026-10-18'
+    identity_source: builder not stated in the register; name check = app title
+  detected_by: sweep-events-ticketing.py
+  detected: '2026-10-18'
+- partner_name: Printify
+  app: Printify
+  partner: printify
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://www.eventbrite.com/apps/printify/
+  category: Eventbrite app
+  contract_reference:
+    register: Eventbrite App Marketplace (www.eventbrite.com/api/v3/apps/, public JSON)
+    spec_file: null
+    role: eventbrite-listed-app
+    registered_name: Printify
+    matched_domain: printify.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Printify
+    signal_note: 'builder not stated in the register: direction unknown, out of position shares'
+    detected_by: sweep-events-ticketing.py
+    detected: '2026-10-18'
+    identity_source: builder not stated in the register; name check = app title
+  detected_by: sweep-events-ticketing.py
+  detected: '2026-10-18'
+- partner_name: Spotify Advertising
+  app: Spotify Advertising
+  partner: spotify
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://www.eventbrite.com/apps/spotify/
+  category: Eventbrite app
+  contract_reference:
+    register: Eventbrite App Marketplace (www.eventbrite.com/api/v3/apps/, public JSON)
+    spec_file: null
+    role: eventbrite-listed-app
+    registered_name: Spotify Advertising
+    matched_domain: spotify.com
+    matched_by: domain+name-among-holders
+    listings: 1
+    sample_apps:
+    - Spotify Advertising
+    signal_note: 'builder not stated in the register: direction unknown, out of position shares'
+    detected_by: sweep-events-ticketing.py
+    detected: '2026-10-18'
+    identity_source: builder not stated in the register; name check = app title
+  detected_by: sweep-events-ticketing.py
+  detected: '2026-10-18'
+- partner_name: Swapcard - Free Networking App
+  app: Swapcard - Free Networking App
+  partner: swapcard
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://www.eventbrite.com/apps/swapcard-your-free-networking-app/
+  category: Eventbrite app
+  contract_reference:
+    register: Eventbrite App Marketplace (www.eventbrite.com/api/v3/apps/, public JSON)
+    spec_file: null
+    role: eventbrite-listed-app
+    registered_name: Swapcard - Free Networking App
+    matched_domain: swapcard.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Swapcard - Free Networking App
+    signal_note: 'builder not stated in the register: direction unknown, out of position shares'
+    detected_by: sweep-events-ticketing.py
+    detected: '2026-10-18'
+    identity_source: builder not stated in the register; name check = app title
+  detected_by: sweep-events-ticketing.py
+  detected: '2026-10-18'
+- partner_name: Workato
+  app: Workato
+  partner: workato
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: ipaas-bridge
+  direction: unknown
+  evidence: https://www.eventbrite.com/apps/workato/
+  category: Eventbrite app
+  contract_reference:
+    register: Eventbrite App Marketplace (www.eventbrite.com/api/v3/apps/, public JSON)
+    spec_file: null
+    role: eventbrite-listed-app
+    registered_name: Workato
+    matched_domain: workato.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Workato
+    signal_note: 'builder not stated in the register: direction unknown, out of position shares'
+    detected_by: sweep-events-ticketing.py
+    detected: '2026-10-18'
+    identity_source: builder not stated in the register; name check = app title
+  detected_by: sweep-events-ticketing.py
+  detected: '2026-10-18'
+- partner_name: Zoho CRM
+  app: Zoho CRM
+  partner: zoho-crm
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: unknown
+  relationship: platform-app
+  direction: unknown
+  evidence: https://www.eventbrite.com/apps/zoho-crm/
+  category: Eventbrite app
+  contract_reference:
+    register: Eventbrite App Marketplace (www.eventbrite.com/api/v3/apps/, public JSON)
+    spec_file: null
+    role: eventbrite-listed-app
+    registered_name: Zoho CRM
+    matched_domain: zoho.com
+    matched_by: domain+name-among-holders
+    listings: 1
+    sample_apps:
+    - Zoho CRM
+    signal_note: 'builder not stated in the register: direction unknown, out of position shares'
+    detected_by: sweep-events-ticketing.py
+    detected: '2026-10-18'
+    identity_source: builder not stated in the register; name check = app title
+  detected_by: sweep-events-ticketing.py
+  detected: '2026-10-18'
 method: searched
 checked:
 - https://connectors.airbyte.com/files/registries/v0/cloud_registry.json
@@ -187,9 +457,20 @@ checked:
 - https://github.com/PipedreamHQ/pipedream/tree/94800dd6de6640b942c65ea7ee655f71ac56d438/components/
 - https://github.com/meltano/hub
 - https://github.com/n8n-io/n8n/tree/860f1273ebd73fabbd668cbec2c49ed9b48a286d/packages/nodes-base/nodes/
+- https://www.eventbrite.com/api/v3/apps/
 - https://zapier.com/api/v4/apps/
 - zoom/integrations/zoom-integration-edges.yml
 source:
 - https://github.com/PipedreamHQ/pipedream/tree/94800dd6de6640b942c65ea7ee655f71ac56d438/components/
 - https://github.com/n8n-io/n8n/tree/860f1273ebd73fabbd668cbec2c49ed9b48a286d/packages/nodes-base/nodes/
 - https://zapier.com/api/v4/apps/
+marketplace_apps:
+- marketplace: own
+  channel: unknown
+  app: eventbrite
+  url: https://www.eventbrite.com/apps/
+  app_count: 37
+  adapter: 'sweep-events-ticketing.py:api/v3/apps/ (public JSON the /apps page reads: name, app_url, contact e-mails,
+    links)'
+  listed: 10
+  note: 37 listings read; only domain-linked builders / vendors are written
