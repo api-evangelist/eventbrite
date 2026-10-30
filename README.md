@@ -1,4 +1,4 @@
-# Eventbrite (eventbrite)
+# Eventbrite
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,102 +66,119 @@
 
 A global self-service ticketing and event technology platform for live experiences. Enables creators to plan, promote, and sell tickets for events of all sizes. The Eventbrite Platform exposes a REST API plus webhooks that lets developers manage events, attendees, orders, organizations, ticket classes, and venues.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/eventbrite/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/eventbrite/refs/heads/main/apis.yml)
+**Areas:** Event · Event Technology · Ticketing · Marketplace
 
-## Scope
+## Eventbrite on APIs.io
 
-- **Type:** Index
+Everything profiled for Eventbrite is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/eventbrite/](https://apis.io/providers/eventbrite/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (11)
 
-- Events
-- Event Technology
-- Ticketing
-- Marketplace
+- [Eventbrite Platform API](https://apis.io/apis/eventbrite/platform-api/) — The Eventbrite Platform API is a REST API that lets developers manage events, attendees, orders, organizations, ticket classes, venues, categories, and…
+- [Eventbrite Webhooks](https://apis.io/apis/eventbrite/webhooks/) — Eventbrite Webhooks deliver HTTP POST notifications to subscriber URLs when events such as event publish/unpublish, order placement and updates, attendee…
+- [Eventbrite Python SDK](https://apis.io/apis/eventbrite/python-sdk/) — The Eventbrite Python SDK is an open-source client library maintained by Eventbrite that provides idiomatic Python access to the Eventbrite Platform API for…
+- [Eventbrite Attendees API](https://apis.io/apis/eventbrite/eventbrite-attendees-api/) — The Attendees API from Eventbrite — 1 operation(s) for attendees.
+- [Eventbrite Categories API](https://apis.io/apis/eventbrite/eventbrite-categories-api/) — The Categories API from Eventbrite — 1 operation(s) for categories.
+- [Eventbrite Events API](https://apis.io/apis/eventbrite/eventbrite-events-api/) — The Events API from Eventbrite — 2 operation(s) for events.
+- [Eventbrite Orders API](https://apis.io/apis/eventbrite/eventbrite-orders-api/) — The Orders API from Eventbrite — 2 operation(s) for orders.
+- [Eventbrite Organizations API](https://apis.io/apis/eventbrite/eventbrite-organizations-api/) — The Organizations API from Eventbrite — 1 operation(s) for organizations.
+- [Eventbrite Ticket Classes API](https://apis.io/apis/eventbrite/eventbrite-ticket-classes-api/) — The Ticket Classes API from Eventbrite — 1 operation(s) for ticket classes.
+- [Eventbrite Users API](https://apis.io/apis/eventbrite/eventbrite-users-api/) — The Users API from Eventbrite — 1 operation(s) for users.
+- [Eventbrite Venues API](https://apis.io/apis/eventbrite/eventbrite-venues-api/) — The Venues API from Eventbrite — 2 operation(s) for venues.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-05
-- **Modified:** 2026-05-16
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Eventbrite Platform API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Eventbrite Platform API is a REST API that lets developers manage events, attendees, orders, organizations, ticket classes, venues, categories, and event series on Eventbrite. The API uses OAuth 2.0 with bearer tokens (private and OAuth-issued tokens); resources are accessed under the v3 base path at https://www.eventbriteapi.com/v3 and return JSON payloads. Typical use cases include syncing event inventory into external sites, fulfilling tickets and check-in flows, embedding event creation into partner platforms, and reporting on attendee and sales data.
+- [Eventbrite Agentic Access](https://apis.io/agentic-access/eventbrite/eventbrite-agentic-access/)
 
-- **Human URL:** [https://www.eventbrite.com/platform/api](https://www.eventbrite.com/platform/api)
-- **Base URL:** `https://www.eventbriteapi.com/v3`
+#### Collections (9)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Events
-- Attendees
-- Orders
-- Organizations
-- Ticket Classes
-- Venues
-- Categories
+- [Eventbrite Platform API](https://apis.io/collections/eventbrite/open-eventbrite/)
+- [Eventbrite Platform Attendees API](https://apis.io/collections/eventbrite/open-eventbrite-attendees-api/)
+- [Eventbrite Platform Attendees Categories API](https://apis.io/collections/eventbrite/open-eventbrite-categories-api/)
+- [Eventbrite Platform Attendees Events API](https://apis.io/collections/eventbrite/open-eventbrite-events-api/)
+- [Eventbrite Platform Attendees Orders API](https://apis.io/collections/eventbrite/open-eventbrite-orders-api/)
+- [Eventbrite Platform Attendees Organizations API](https://apis.io/collections/eventbrite/open-eventbrite-organizations-api/)
+- [Eventbrite Platform Attendees Ticket Classes API](https://apis.io/collections/eventbrite/open-eventbrite-ticket-classes-api/)
+- [Eventbrite Platform Attendees Users API](https://apis.io/collections/eventbrite/open-eventbrite-users-api/)
+- [Eventbrite Platform Attendees Venues API](https://apis.io/collections/eventbrite/open-eventbrite-venues-api/)
 
-#### Properties
+#### Security (4)
 
-- [Documentation](https://www.eventbrite.com/platform/api)
-- [Signup U R L](https://www.eventbrite.com/platform/api-keys)
-- [Authentication](https://www.eventbrite.com/platform/api#/introduction/authentication)
-- [Postman Collection](collections/eventbrite.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/eventbrite.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Eventbrite Webhooks
+- [Eventbrite Authentication](https://apis.io/security/eventbrite/eventbrite-authentication/)
+- [Eventbrite Domain Security](https://apis.io/security/eventbrite/eventbrite-domain-security/)
+- [Eventbrite Trust Center](https://apis.io/security/eventbrite/eventbrite-trust-center/)
+- [Eventbrite Vulnerability Disclosure](https://apis.io/security/eventbrite/eventbrite-vulnerability-disclosure/)
 
-Eventbrite Webhooks deliver HTTP POST notifications to subscriber URLs when events such as event publish/unpublish, order placement and updates, attendee changes, refunds, and check-ins occur on Eventbrite. Developers register webhook endpoints against an organization via the Platform API and use the resulting payloads to drive real-time integrations without polling the REST API.
+## Where to find this API
 
-- **Human URL:** [https://www.eventbrite.com/platform/api#/reference/webhook](https://www.eventbrite.com/platform/api#/reference/webhook)
-- **Base URL:** `https://www.eventbriteapi.com/v3`
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-#### Tags
-
-- Webhooks
-- Events
-- Orders
-- Notifications
-- Automation
-
-#### Properties
-
-- [Documentation](https://www.eventbrite.com/platform/api#/reference/webhook)
-- [Postman Collection](collections/eventbrite.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/eventbrite.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Eventbrite Python SDK
-
-The Eventbrite Python SDK is an open-source client library maintained by Eventbrite that provides idiomatic Python access to the Eventbrite Platform API for managing events, orders, attendees, and related resources.
-
-- **Human URL:** [https://github.com/eventbrite/eventbrite-sdk-python](https://github.com/eventbrite/eventbrite-sdk-python)
-- **Base URL:** `https://www.eventbriteapi.com/v3`
-
-#### Tags
-
-- SDK
-- Python
-- Client Library
-
-#### Properties
-
-- [Source Code](https://github.com/eventbrite/eventbrite-sdk-python)
-- [SDK](https://pypi.org/project/eventbrite/)
-- [Postman Collection](collections/eventbrite.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/eventbrite.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/eventbrite)
 - [Website](https://www.eventbrite.com/)
-- [Developer Portal](https://www.eventbrite.com/platform/)
 - [Documentation](https://www.eventbrite.com/platform/api)
-- [Signup U R L](https://www.eventbrite.com/platform/api-keys)
-- [Source Code](https://github.com/eventbrite)
-- [Privacy Policy](https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-privacy-policy)
-- [Terms of Service](https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-terms-of-service)
 - [Support](https://www.eventbrite.com/support/contact-us)
 - [Blog](https://www.eventbrite.com/blog/)
-- [Login](https://www.eventbrite.com/signin/)
+- [Terms of service](https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-terms-of-service)
+- [Privacy policy](https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 36.1** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 51.8 |
+| Contract quality | 43.3 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 34.5 |
+| Access clarity | 35.5 |
+
+**Agent readiness 17.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/eventbrite/](https://apis.io/providers/eventbrite/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Eventbrite: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/eventbrite/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
